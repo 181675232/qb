@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>管理后台</title>
+	<script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Public/js/scripts/lhgdialog/lhgdialog.js?skin=idialog"></script>
+    <script type="text/javascript" src="/Public/js/layout.js"></script>	
+    <link href="/Public/admin/css/pagination.css" rel="stylesheet" type="text/css" />	
+	<link href="/Public/admin/base.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/admin/layout.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/Public/js/check.js"></script>
+</head>
+<body class="mainbody">
+    <form id="form1" method="get">
+    <div>
+        <!--导航栏-->
+        <div class="location">
+            <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
+            <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a> <i class="arrow">
+            </i><span>订单列表</span>
+        </div>
+        <!--/导航栏-->
+        <!--工具栏-->	
+        <div class="toolbar-wrap">
+            <div id="floatHead" class="toolbar">
+                <div class="l-list">
+                    <ul class="icon-list">
+                       <!-- <li><a class="add" href="{:U('/Admin/Activity/add')}"><i></i><span> 新增</span></a></li>-->
+						<!--<li><a id="btnSave" Class="save"><i></i><span>保存</span></a></li>-->
+                        <li><a class="all" href="javascript:;" onclick="checkAll(this)"><i></i><span>全选</span></a></li>
+                        <li><a class="del" style="cursor:pointer;" id="btnDelete" OnClick="return ExePostBack('Order')"><i></i><span>删除</span></a></li>
+                    </ul>
+					<div class="menu-list">
+
+				        <div class="rule-single-select single-select">
+				          <select id="ddlProperty" name="verify" onchange="location='/Admin/Order/index/state/'+options[selectedIndex].value">
+				            <option Value=""  <if condition="$verify eq ''">selected="selected"</if>>全部</option>
+				            <option Value="2" <if condition="$verify eq '2'">selected="selected"</if>>待报价</option>
+				            <option Value="3" <if condition="$verify eq '3'">selected="selected"</if>>已预约</option>
+				            <option Value="4" <if condition="$verify eq '4'">selected="selected"</if>>已完成</option>
+							<option Value="5" <if condition="$verify eq '5'">selected="selected"</if>>已取消</option>
+				          </select>
+				        </div>
+
+      				</div>
+                </div>
+                <div class="r-list">
+                    <input type="text" id="txtKeywords" Class="keyword" name="keyword" />
+                    <input type="submit" id="lbtnSearch" name="search" Class="btn-search" value="查询" />
+                </div>
+            </div>
+        </div>
+        <!--/工具栏-->
+		
+		<!--文字列表-->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="ltable">
+		  <tr>
+		    <th width="8%">选择</th>
+		    <th align="center" width="28%">维修车辆</th>
+			<th align="center" width="18%">会员账号(手机号)</th>
+			<th align="center" width="10%">所在城市</th>		    
+			<th align="center" width="10%">订单状态</th>
+			<th align="center" width="15%">发布时间</th>
+		    <th align="center" width="">操作</th>
+		  </tr>
+		<if condition="$data" >
+			<volist name="data" id="val">
+			  <tr>
+			    <td align="center"><input type="checkbox" Class="checkall" value="{$val.id}" Style="vertical-align: middle;" /></td>
+			    <td align="center">{$val.mfg_orig}　{$val.model}　{$val.model_year}　{$val.type}</td>
+				<td align="center">{$val.phone}</td>
+				<td align="center">{$val.city}</td>
+			    <td align="center">
+			    	<if condition="$val['request_status_id'] eq 2">
+			    		等待报价
+						<elseif condition="$val['request_status_id'] eq 3" />
+						已预约
+						<elseif condition="$val['request_status_id'] eq 4" />
+						已完成
+						<elseif condition="$val['request_status_id'] eq 5" />
+						已取消
+						<else />
+						草稿
+			    	</if>
+			    </td>
+				<td align="center">{$val.date_created|date = "Y-m-d H:i:s",###}</td>
+			    <td align="center"><a href="/Admin/Order/edit/id/{$val.id}">详细</a></td>
+			  </tr>
+		  	</volist>
+		<else />
+			<tr><td align="center" colspan="7">暂无记录</td></tr>
+		</if>
+		</table>
+		<!--/文字列表-->
+        <!--内容底部-->
+        <div class="line20">
+        </div>
+        <div class="pagelist">
+            <div class="flickr">
+                {$page}
+            </div>
+        </div>
+        <!--/内容底部-->
+    </div>
+    </form>
+</body>
+</html>

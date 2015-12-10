@@ -1,0 +1,949 @@
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151204092131385364.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151203065303985146.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151202141009098468.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151124180523937467.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151202153530683056.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151123104153757169.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-12-04T16:20:39+08:00 ] 127.0.0.1 /Public/upfile/20151204092131385364.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2015-12-04T17:52:57+08:00 ] 127.0.0.1 /Admin/Base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-12-04T17:53:05+08:00 ] 127.0.0.1 /Admin/City
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `t_city` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_city` LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\CityController.class.php 第 26 行.
+SQL: SELECT * FROM `t_city` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\1ecc55b3729c42c97173d3b2b3c0e809.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2015-12-04T17:53:19+08:00 ] 127.0.0.1 /Admin/Area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `t_area` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_area` LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\AreaController.class.php 第 26 行.
+SQL: SELECT * FROM `t_area` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0165s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 77 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\qb\Application\Runtime\Cache\Admin\630e930257fea5e79c1a7355d0be43f8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2015-12-04T17:53:34+08:00 ] 127.0.0.1 /Admin/Activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0114s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activity` LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 35 行.
+SQL: SELECT * FROM `t_activity` ORDER BY istop desc,isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 42 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-12-04T17:53:43+08:00 ] 127.0.0.1 /Admin/Activity/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-12-04T17:53:43+08:00 ] 127.0.0.1 /Admin/Activity/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0143s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activity` LIMIT 1   [ RunTime:0.0116s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 35 行.
+SQL: SELECT * FROM `t_activity` ORDER BY istop desc,isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.0171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 42 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-12-04T17:53:43+08:00 ] 127.0.0.1 /Admin/Activity/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0145s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activity` LIMIT 1   [ RunTime:0.0137s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\ActivityController.class.php 第 35 行.
+SQL: SELECT * FROM `t_activity` ORDER BY istop desc,isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 42 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\a6220b85232480d316d1c41e6d284089.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-12-04T18:08:12+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0253s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 380 and level !=3 ) ORDER BY id asc  [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 381 and level !=3 ) ORDER BY id asc  [ RunTime:0.0167s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 392 and level !=3 ) ORDER BY id asc  [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0119s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0122s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0169s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 9 and level !=3 ) ORDER BY id asc  [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-12-04T18:08:14+08:00 ] 127.0.0.1 /Admin/Nav/edit/id/380
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE `id` = 380 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 380 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 381 and level !=3 ) ORDER BY id asc  [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 392 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 9 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT `name` FROM `t_nav` WHERE ( bid = 380 and level = 3 )  [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 98 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 100 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 102 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 104 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 106 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 108 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wamp\www\qb\Application\Runtime\Cache\Admin\6062b8c31da841f09016535bedfba0ed.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-12-04T18:08:56+08:00 ] 127.0.0.1 /Admin/Nav/edit/id/380
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0108s ]
+SQL: UPDATE `t_nav` SET `bid`='2',`title`='新闻管理',`state`='1',`name`='news_m',`level`='1',`url`='' WHERE `id` = 380 [ RunTime:0.0127s ]
+SQL: DELETE FROM `t_nav` WHERE `bid` = 380 AND `level` = 3 [ RunTime:0.0101s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Admin\Controller\NavController.class.php 第 58 行.
+
+[ 2015-12-04T18:08:57+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0159s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0195s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 380 and level !=3 ) ORDER BY id asc  [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 381 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0166s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0184s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 392 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0246s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 9 and level !=3 ) ORDER BY id asc  [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-12-04T18:09:01+08:00 ] 127.0.0.1 /Admin/Nav/edit/id/381
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `t_nav` WHERE `id` = 381 LIMIT 1   [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 380 and level !=3 ) ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 381 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0116s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 392 and level !=3 ) ORDER BY id asc  [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0078s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 9 and level !=3 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT `name` FROM `t_nav` WHERE ( bid = 381 and level = 3 )  [ RunTime:0.0086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-12-04T18:09:53+08:00 ] 127.0.0.1 /Admin/Nav/edit/id/381
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0103s ]
+SQL: UPDATE `t_nav` SET `bid`='380',`title`='新闻管理',`state`='1',`name`='news',`level`='2',`url`='/Admin/News' WHERE `id` = 381 [ RunTime:0.0090s ]
+SQL: DELETE FROM `t_nav` WHERE `bid` = 381 AND `level` = 3 [ RunTime:0.0091s ]
+SQL: INSERT INTO `t_nav` (`bid`,`level`,`name`,`title`,`state`) VALUES ('381','3','index','查看','1') [ RunTime:0.0090s ]
+SQL: INSERT INTO `t_nav` (`bid`,`level`,`name`,`title`,`state`) VALUES ('381','3','add','添加','1') [ RunTime:0.0144s ]
+SQL: INSERT INTO `t_nav` (`bid`,`level`,`name`,`title`,`state`) VALUES ('381','3','edit','修改','1') [ RunTime:0.0085s ]
+SQL: INSERT INTO `t_nav` (`bid`,`level`,`name`,`title`,`state`) VALUES ('381','3','delete','删除','1') [ RunTime:0.0129s ]
+SQL: INSERT INTO `t_nav` (`bid`,`level`,`name`,`title`,`state`) VALUES ('381','3','state','审核','1') [ RunTime:0.0078s ]
+
+[ 2015-12-04T18:09:54+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0147s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0147s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0154s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0154s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0139s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0144s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0138s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 380 and level !=3 ) ORDER BY id asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 381 and level !=3 ) ORDER BY id asc  [ RunTime:0.0154s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0192s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0147s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0135s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 392 and level !=3 ) ORDER BY id asc  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0151s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0158s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0177s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0154s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0188s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 9 and level !=3 ) ORDER BY id asc  [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2015-12-04T18:21:28+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0144s ]
+SQL: SELECT t_admin.name,t_role.name as title FROM `t_admin` left join t_role_user on t_role_user.user_id = t_admin.id left join t_role on t_role.id = t_role_user.role_id  WHERE ( t_admin.id = 3 ) LIMIT 1   [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-12-04T18:21:28+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-12-04T18:21:28+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-12-04T18:21:29+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0119s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 342 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0178s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 335 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0137s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 380 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 381 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0142s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 206 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0138s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 363 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 364 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 370 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0162s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2015-12-04T18:21:31+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'php8082.t_news' doesn't exist
+
