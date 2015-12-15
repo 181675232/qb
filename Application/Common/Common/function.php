@@ -244,7 +244,7 @@ function yzm($phone)
 	$apikey = 'e1127a31a9dd2dee4ec9cc325da5b580';//密码
 	$mobile	 = '86'.$phone;	//号手机码
 
-	$content = '您的短信验证码是：'.$vcodes.'，本次验证码有效期为5分钟！【特惠帮】';//内容
+	$content = '您的短信验证码是：'.$vcodes.'，本次验证码有效期为5分钟！【Q帮】';//内容
 	// 		$this->session->set_userdata('time', time());
 	// 		$this->session->set_userdata('mcode', $vcodes);//将content的值保存在session中
 	$result = sendSMS($username,$password,$mobile,$content,$apikey);

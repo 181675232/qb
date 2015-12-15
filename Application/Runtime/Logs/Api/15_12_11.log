@@ -1,0 +1,121 @@
+[ 2015-12-11T16:20:36+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0123s ]
+NOTIC: [8] Undefined index: pid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 387 行.
+
+[ 2015-12-11T16:21:17+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0146s ]
+NOTIC: [8] Undefined index: pid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 387 行.
+
+[ 2015-12-11T16:21:39+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0105s ]
+NOTIC: [8] Undefined index: pid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 387 行.
+
+[ 2015-12-11T16:22:23+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0126s ]
+
+[ 2015-12-11T16:22:33+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 111179 LIMIT 1   [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_cell` (`uid`,`type`,`pid`,`addtime`) VALUES ('1','news','111179','1449822152') [ RunTime:0.3517s ]
+
+[ 2015-12-11T16:26:13+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 111179 LIMIT 1   [ RunTime:0.0102s ]
+SQL: DELETE FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 111179 [ RunTime:0.0094s ]
+
+[ 2015-12-11T16:26:34+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 9503767 LIMIT 1   [ RunTime:0.0112s ]
+SQL: INSERT INTO `t_cell` (`uid`,`type`,`pid`,`addtime`) VALUES ('1','news','9503767','1449822394') [ RunTime:0.0120s ]
+
+[ 2015-12-11T17:49:05+08:00 ] 127.0.0.1 /Api/index/newsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0195s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `t_trace` WHERE `uid` = 1 AND `newsid` = 9503767 LIMIT 1   [ RunTime:0.0117s ]
+SQL: UPDATE `t_trace` SET `addtime`='1449827345' WHERE `uid` = 1 AND `newsid` = 9503767 [ RunTime:0.0118s ]
+SQL: SELECT `id`,`tag`,`lower`,`upper`,`url`,`groupid` FROM `t_news` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT t_news.id,t_news.title,t_news.origin,t_news.addtime,t_news.addtime FROM `t_news` left join t_trace on t_news.id = t_trace.newsid  WHERE ( t_trace.uid = '1' and t_news.id !='9503767' and (t_news.cityid = 9503760 or t_news.cityid = 0) ) ORDER BY t_trace.addtime desc LIMIT 2   [ RunTime:0.0146s ]
+SQL: SELECT `id`,`title`,`origin`,`addtime`,`type` FROM `t_news` WHERE ( groupid = '1' and id !='9503767' and (cityid = 9503760 or cityid = 0) ) ORDER BY addtime desc LIMIT 2   [ RunTime:0.0122s ]
+SQL: SELECT * FROM `t_upper` WHERE ( uid = '1' and pid = '9503767' and type='news' ) LIMIT 1   [ RunTime:0.0238s ]
+SQL: SELECT * FROM `t_cell` WHERE ( uid = '1' and pid = '9503767' and type='news' ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2015-12-11T17:49:29+08:00 ] 127.0.0.1 /Api/index/cell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 9503767 LIMIT 1   [ RunTime:0.0218s ]
+SQL: DELETE FROM `t_cell` WHERE `uid` = 1 AND `type` = 'news' AND `pid` = 9503767 [ RunTime:0.0125s ]
+
+[ 2015-12-11T17:49:33+08:00 ] 127.0.0.1 /Api/index/newsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_trace` WHERE `uid` = 1 AND `newsid` = 9503767 LIMIT 1   [ RunTime:0.0184s ]
+SQL: UPDATE `t_trace` SET `addtime`='1449827373' WHERE `uid` = 1 AND `newsid` = 9503767 [ RunTime:0.0154s ]
+SQL: SELECT `id`,`tag`,`lower`,`upper`,`url`,`groupid` FROM `t_news` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT t_news.id,t_news.title,t_news.origin,t_news.addtime,t_news.addtime FROM `t_news` left join t_trace on t_news.id = t_trace.newsid  WHERE ( t_trace.uid = '1' and t_news.id !='9503767' and (t_news.cityid = 9503760 or t_news.cityid = 0) ) ORDER BY t_trace.addtime desc LIMIT 2   [ RunTime:0.0116s ]
+SQL: SELECT `id`,`title`,`origin`,`addtime`,`type` FROM `t_news` WHERE ( groupid = '1' and id !='9503767' and (cityid = 9503760 or cityid = 0) ) ORDER BY addtime desc LIMIT 2   [ RunTime:0.0168s ]
+SQL: SELECT * FROM `t_upper` WHERE ( uid = '1' and pid = '9503767' and type='news' ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_cell` WHERE ( uid = '1' and pid = '9503767' and type='news' ) LIMIT 1   [ RunTime:0.0127s ]
+

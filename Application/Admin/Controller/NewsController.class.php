@@ -78,6 +78,7 @@ class NewsController extends CommonController {
 					$img = M('img');
 					$data_img['pid'] = $res;
 					for($i=0;$i<count($data['user_simg']);$i++){
+						$data_img['type'] = 'news';
 						$data_img['simg'] = $data['user_simg'][$i];
 						$data_img['title'] = $data['user_desc'][$i];
 						$data_img['addtime'] = time();
@@ -126,6 +127,7 @@ class NewsController extends CommonController {
 				$img->where("pid = '{$where['id']}'")->delete();
 				$data_img['pid'] = $where['id'];
 				for($i=0;$i<count($data['user_simg']);$i++){
+					$data_img['type'] = 'news';
 					$data_img['simg'] = $data['user_simg'][$i];
 					$data_img['title'] = $data['user_desc'][$i];
 					$data_img['addtime'] = time();

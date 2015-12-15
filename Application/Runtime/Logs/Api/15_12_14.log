@@ -1,0 +1,417 @@
+[ 2015-12-14T15:27:21+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-12-14T15:28:56+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0136s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0123s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-12-14T15:29:16+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0157s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0101s ]
+
+[ 2015-12-14T15:29:25+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0100s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0102s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-12-14T15:29:35+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0249s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0103s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-12-14T15:29:45+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0133s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0117s ]
+
+[ 2015-12-14T15:30:01+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0162s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0083s ]
+
+[ 2015-12-14T15:30:55+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0191s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0148s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-12-14T15:31:53+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0140s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0111s ]
+
+[ 2015-12-14T15:32:02+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0109s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0106s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '14' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0100s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 521 行.
+
+[ 2015-12-14T15:45:02+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0103s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '14' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0106s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 521 行.
+
+[ 2015-12-14T15:58:50+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0127s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0134s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 521 行.
+
+[ 2015-12-14T16:00:36+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0171s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0140s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 521 行.
+
+[ 2015-12-14T16:04:14+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0126s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0188s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 519 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0133s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-12-14T16:04:26+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0182s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0140s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 519 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0117s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0121s ]
+
+[ 2015-12-14T16:17:28+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0100s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0117s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 523 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0089s ]
+
+[ 2015-12-14T16:19:02+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0105s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0151s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '14' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0088s ]
+
+[ 2015-12-14T16:19:43+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0124s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0101s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 523 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '14' ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '14' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0112s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0103s ]
+
+[ 2015-12-14T16:20:41+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0129s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0108s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 523 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0096s ]
+
+[ 2015-12-14T16:56:17+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0308s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0301s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0272s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Array sizes are inconsistent D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 525 行.
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0152s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0332s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0250s ]
+
+[ 2015-12-14T16:59:16+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0143s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0181s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0275s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0102s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0088s ]
+
+[ 2015-12-14T17:02:52+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0145s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0103s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0191s ]
+
+[ 2015-12-14T17:04:38+08:00 ] 127.0.0.1 /Api/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0126s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0112s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0277s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 10   [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0113s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0129s ]
+
+[ 2015-12-14T17:24:14+08:00 ] 127.0.0.1 /Api/Index/hotmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0090s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0  [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0093s ]
+
+[ 2015-12-14T17:34:03+08:00 ] 127.0.0.1 /Api/Index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0099s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '12' ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '12' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '1' ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '1' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0095s ]
+
+[ 2015-12-14T18:27:48+08:00 ] 127.0.0.1 /Api/Index/commentmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0138s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,8' at line 1
+
+[ 2015-12-14T18:28:08+08:00 ] 127.0.0.1 /Api/Index/commentmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0151s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE t_comment.pid = '1' AND t_comment.type = 'news' ORDER BY t_comment.id desc LIMIT 2,8   [ RunTime:0.0145s ]
+
+[ 2015-12-14T18:30:22+08:00 ] 127.0.0.1 /Api/Index/commentmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0199s ]
+SQL: SELECT t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE t_comment.pid = '1' AND t_comment.type = 'news' ORDER BY t_comment.id desc LIMIT 2,8   [ RunTime:0.0115s ]
+
