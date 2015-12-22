@@ -22,9 +22,9 @@ class IndexController extends Controller {
     public  function  register(){
     	if(I('post.')){
     		$data = I('post.');
-    		$data['addtime'] = time();
+    		$data['addtime'] = $data['logintime']  = time();
 			if (mb_strlen(trim($data['password'])) < 6){
-				json('400','密码不能小于6位！');
+				json('400','密码不能小于6位');
 			}
 			if ($data['password'] != $data['pass']){
 				json('400','两次密码输入不一致，请重新输入');
@@ -32,7 +32,7 @@ class IndexController extends Controller {
 			unset($data['pass']);
     		$data['password'] = md5(trim(I('post.password')));
     		if (empty($data['username'])){
-    			json('400','昵称不能为空！');
+    			json('400','昵称不能为空');
     		}
     		if($_FILES){
     			$data1 = $_FILES['simg'];
@@ -54,6 +54,7 @@ class IndexController extends Controller {
     		if ($table->where("phone='{$data['phone']}'")->find()){
     			json('400','该账号已注册');
     		}
+    		$data['bgimg'] = '/Public/upfile/bgimg.jpg';
     		$return = $table->add($data);		
     		if ($return){
     			$rongyun = new  \Org\Util\Rongyun($this->appKey,$this->appSecret);
@@ -87,12 +88,12 @@ class IndexController extends Controller {
     	if(I('post.phone')){
     		$phone=I('post.phone');
     		if(!checkPhone($phone)){
-    			json('400','请输入正确的手机号！');
+    			json('400','请输入正确的手机号');
     		}
     		$user = M('user');
     		$return = $user->where("phone=$phone")->find();
     		if($return){
-    			json('400','用户名已经被注册，请登陆！');
+    			json('400','用户名已经被注册，请登陆');
     		}else{
     			yzm($phone);
     		}
@@ -148,7 +149,7 @@ class IndexController extends Controller {
 	    			json('400','密码错误');
 	    		}
 	    	}else{
-	    		json('400','未注册！');
+	    		json('400','未注册');
 	    	}
     	}
     	json('404','没有接收到传值');
@@ -160,7 +161,7 @@ class IndexController extends Controller {
     		$phone = I('post.phone');
     		$user = M('user');
     		if (mb_strlen(trim(I('post.password'))) < 6){
-    			json('400','密码不能小于6位！');
+    			json('400','密码不能小于6位');
     		}
     		if (I('post.password') != I('post.pass')){
     			json('400','两次密码输入不一致，请重新输入');
@@ -185,7 +186,7 @@ class IndexController extends Controller {
     			json('400','原密码输入有误');
     		}
     		if (mb_strlen(trim(I('post.password'))) < 6){
-    			json('400','密码不能小于6位！');
+    			json('400','密码不能小于6位');
     		}
     		if (I('post.password') != I('post.pass')){
     			json('400','两次密码输入不一致，请重新输入');
@@ -264,8 +265,8 @@ class IndexController extends Controller {
 	}
 	//获取市列表
 	public function getcitys(){
-		$table = M('city');
-		$data = $table->where('isred = 2')->select();
+		$table = M('selfcity');
+		$data = $table->select();
 		if ($data){
 			json('200','成功',$data);
 		}else {
@@ -325,22 +326,34 @@ class IndexController extends Controller {
 			$trace = M('trace');
 			$tab = M('upper');
 			$cell = M('cell');
+			$comment = M('comment');
 			$where['uid'] = I('post.uid');
 			$where['newsid'] = I('post.id');
 			$cityid = I('post.cityid');
 			if (!$cityid){
 				json('400','参数不合法');
 			}
-			$res = $trace->where($where)->find();
-			if ($res){
-				$trace->where($where)->setField('addtime',time());
-			}else {
-				$where['addtime'] = time();
-				$trace->add($where);
+			if ($where['uid']){
+				$res = $trace->where($where)->find();
+				if ($res){
+					$trace->where($where)->setField('addtime',time());
+				}else {
+					$where['addtime'] = time();
+					$trace->add($where);
+				}
 			}
-			$data = $table->field('id,tag,lower,upper,url,groupid')->find(I('post.id'));		
-			$data['trace'] = $table->field('t_news.id,t_news.title,t_news.origin,t_news.addtime,t_news.addtime')
-			->join('left join t_trace on t_news.id = t_trace.newsid')
+			$data = $table->field('id,tag,lower,upper,url,groupid,type')->find(I('post.id'));
+			$data['count'] = $comment->where("type = 'news' and typeid='{$where['newsid']}'")->count();	
+			if ($data['type'] == 2){
+				$img = M('img');
+				$data['simg'] = $img->field('title,simg')->where("type = news and pid = '{$where['newsid']}'")->select();
+			}else {
+				$data['simg'] = '';
+			}
+			$ads = M('ads');
+			$data['banner'] = $ads->field('id,title,simg')->order('ord asc,id desc')->find();
+			$data['trace'] = $trace->field('t_news.id,t_news.title,t_news.origin,t_news.addtime,t_news.type')
+			->join('left join t_news on t_news.id = t_trace.newsid')
 			->where("t_trace.uid = '{$where['uid']}' and t_news.id !='{$where['newsid']}' and (t_news.cityid = $cityid or t_news.cityid = 0)")->order("t_trace.addtime desc")->limit(2)->select();
 			$data['with'] = $table->field('id,title,origin,addtime,type')->where("groupid = '{$data['groupid']}' and id !='{$where['newsid']}' and (cityid = $cityid or cityid = 0)")->order("addtime desc")->limit(2)->select();			
 			$s = $tab->where("uid = '{$where['uid']}' and pid = '{$where['newsid']}' and type='news'")->find();
@@ -356,11 +369,14 @@ class IndexController extends Controller {
 	public function upper(){
 		if (I('post.')){
 			$where = $where1 = I('post.');
+			if (!$where['uid']){
+				json('400','登陆后才能执行此操作！');
+			}
 			unset($where['state']);
 			$table = M('upper');
 			$tab = M(I('post.type'));
 			if ($table->where($where)->find()){
-				json('400','不可更改！');
+				json('400','不可重复操作');
 			}else {
 				$where1['addtime'] = time();
 				if ($table->add($where1)){
@@ -374,7 +390,7 @@ class IndexController extends Controller {
 						json('400','非法操作');
 					}				
 				}else {
-					json('400','操作失败！');
+					json('400','操作失败');
 				}
 			}
 		}
@@ -383,24 +399,27 @@ class IndexController extends Controller {
 	
 	//收藏
 	public function cell(){
-		if (I('post.')){
+		if (I('post.')){		
 			$table = M('cell');
 			$where = I('post.');
+			if (!$where['uid']){
+				json('400','登陆后才能执行此操作！');
+			}
 			if (!checkNum($where['pid']) || !checkNum($where['uid']) || checkNull($where['type'])){
-				json('400','参数不合法！');
+				json('400','参数不合法');
 			}
 			if ($table->where($where)->find()){
 				if ($table->where($where)->delete()){
-					json('200','取消成功！');
+					json('200','取消成功');
 				}else {
-					json('400','操作失败！');
+					json('400','操作失败');
 				}
 			}else {
 				$where['addtime']= time();
 				if ($table->add($where)){
-					json('200','收藏成功！');
+					json('200','收藏成功');
 				}else {
-					json('400','操作失败！');
+					json('400','操作失败');
 				}
 			}					
 		}
@@ -412,6 +431,9 @@ class IndexController extends Controller {
 		if (I('post.')){
 			$table = M('fans');
 			$where = I('post.');
+			if (!$where['uid']){
+				json('400','登陆后才能执行此操作！');
+			}
 			$where1['uid'] = I('post.fid');
 			$where1['fid'] = I('post.uid');
 			if ($table->where($where)->find()){
@@ -421,9 +443,9 @@ class IndexController extends Controller {
 						$tab->where($where)->delete();
 						$tab->where($where1)->delete();
 					}
-					json('200','取消成功！');
+					json('200','取消成功');
 				}else {
-					json('400','操作失败！');
+					json('400','操作失败');
 				}
 			}else {
 				$where['addtime']= time();
@@ -434,9 +456,9 @@ class IndexController extends Controller {
 						$tab->add($where);
 						$tab->add($where1);
 					}
-					json('200','关注成功！');
+					json('200','关注成功');
 				}else {
-					json('400','操作失败！');
+					json('400','操作失败');
 				}
 			}					
 		}
@@ -461,37 +483,45 @@ class IndexController extends Controller {
 			$page1 = ($page-1)*10;
 			$page2 = ($page-1);
 			if ($groupid == 'top'){
-				$data = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("isred = 2 and istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();	
-				$data1 = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("istop = 2 and (cityid = 0 or cityid = $cityid)")->order('isred desc,ord asc,id desc')->limit($page2,1)->select();
+				$data = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("isred = 2 and istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();	
+				$data1 = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("istop = 2 and (cityid = 0 or cityid = $cityid)")->order('isred desc,ord asc,id desc')->limit($page2,1)->select();
 				if (count($data) >= 5 && $data1){
 					$res = array_splice($data,5,5,$data1);
-					array_push($data, $res);
+					$data = array_merge($data, $res);
 				}
 			}elseif ($groupid == 'hot'){
-				$data = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("istop != 2 and (cityid = 0 or cityid = $cityid)")->order('ord asc,id desc')->limit($page1,10)->select();	
-				$data1 = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("istop = 2 and (cityid = 0 or cityid = $cityid)")->order('isred desc,ord asc,id desc')->limit($page2,1)->select();
+				$data = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("istop != 2 and (cityid = 0 or cityid = $cityid)")->order('ord asc,id desc')->limit($page1,10)->select();	
+				$data1 = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("istop = 2 and (cityid = 0 or cityid = $cityid)")->order('isred desc,ord asc,id desc')->limit($page2,1)->select();
 				if (count($data) >= 5 && $data1){
 					$res = array_splice($data,5,5,$data1);
-					array_push($data, $res);
+					$data = array_merge($data, $res);
 				}
 			}elseif ($groupid == 'news'){
-				$data = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();
+				$data = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();
 			}else {
-				$data = $table->field('id,title,description,simg,img,istop,origin,addtime,type')->where("groupid = $groupid and istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();
+				$data = $table->field('id,title,description as descript,simg,img,istop,origin,addtime,type')->where("groupid = $groupid and istop != 2 and (cityid = 0 or cityid = $cityid)")->order('id desc')->limit($page1,10)->select();
 			}
 			if ($data){
 				$comment = M('comment');
 				$friend = M('friend');
 				$arr = $friend->where("uid = $id")->getField('fid',true);
-				$where['uid'] = array('in',$arr);
+				if($arr){
+					$where['uid'] = array('in',$arr);
+				}				
 				$where['type'] = 'news';		
 				$img = M('img');
 				foreach ($data as $key=>$val){			
 					$data[$key]['comment'] = $comment->where("type = 'news' and typeid = '{$val['id']}'")->count();
 					$where['typeid'] = $val['id'];
-					$data[$key]['friend'] = count($comment->where($where)->group('uid')->select());
+					if($arr){
+						$data[$key]['friendcount'] = count($comment->where($where)->group('uid')->select());
+					}else {
+						$data[$key]['friendcount'] = 0;
+					}
 					if ($val['type'] == 2){
 						$data[$key]['simg3'] = $img->field('simg')->where("type = 'news' and pid = '{$val['id']}'")->order('id asc')->limit(3)->select();
+					}else {
+						$data[$key]['simg3'] = 0;
 					}
 				}
 				json('200','成功',$data);
@@ -507,6 +537,9 @@ class IndexController extends Controller {
 		if (I('post.')){
 			$table = M('comment');
 			$where = I('post.');
+			if (!$where['uid']){
+				json('400','登陆后才能执行此操作！');
+			}
 			$state = $where['state'];
 			unset($where['state']);
 			$where['addtime'] = time();
@@ -520,13 +553,13 @@ class IndexController extends Controller {
 						$array['type'] = $where['type'];
 						$array['id'] = $where['typeid'];
 						$jpush = new \Org\Util\Jpush($this->app_key,$this->master_secret);
-						$content = '您有一条群组申请';
+						$content = '您的好友回复了您';
 						$jpush->push($jpushid, $this->title,$content,$array);
 					}
 				}
-				json('200','成功！');
+				json('200','成功');
 			}else {
-				json('400','评论失败！');
+				json('400','评论失败');
 			}	
 		}
 		json('404');
@@ -537,10 +570,16 @@ class IndexController extends Controller {
 		if (I('post.')){
 			$table = M('user');
 			$where = I('post.');
-			if ($table->save($where)){
-				json('200','成功');
-			}else {
-				json('400','启动失败');
+			$where['logintime'] = time();
+			if ($where['id']){
+				if ($table->save($where)){
+					$base = M('base');
+					$res = $base->find();
+					$data['ban'] = $res['ban'];
+					json('200','成功',$data);
+				}else {
+					json('400','启动失败');
+				}
 			}
 		}
 		json('404');
@@ -550,11 +589,13 @@ class IndexController extends Controller {
 	public function comment(){
 		if (I('post.')){
 			$table = M('comment');
+			$upper = M('upper');
+			$friend = M('friend');
 			$uid= I('post.uid');
 			$where['t_comment.typeid'] = I('post.typeid');
 			$where['t_comment.type'] = I('post.type');
 			$where['t_comment.pid'] = 0;
-			$data['hot'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
+			$data['hot'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
 			->join('left join t_user on t_user.id = t_comment.uid')
 			->where($where)->select();
 			if ($data['hot']){
@@ -565,8 +606,14 @@ class IndexController extends Controller {
 						continue;
 					}
 					$data['hot'][$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-					
-					$data['hot'][$key]['data'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+					if ($uid){
+						$data['hot'][$key]['state'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $uid")->find() ? 1 : 0;
+						$data['hot'][$key]['isfriend'] = $friend->where("fid = '{$val['uid']}' and uid = $uid")->find() ? 1 : 0;
+					}else {
+						$data['hot'][$key]['state'] = 0;
+						$data['hot'][$key]['isfriend'] = 0;
+					}
+					$data['hot'][$key]['data'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 					->join('left join t_user on t_user.id = t_comment.uid')
 					->join('left join t_user u on u.id = t_comment.senduid')
 					->where("t_comment.pid = '{$val['id']}'")->order('t_comment.id desc')->limit(2)->select();
@@ -577,6 +624,15 @@ class IndexController extends Controller {
 							$data['hot'][$key]['data'][$k]['distance'] = ceil($data['hot'][$key]['data'][$k]['di']/1000).'km';
 						}else {
 							$data['hot'][$key]['data'][$k]['distance'] = $data['hot'][$key]['data'][$k]['di'].'m';
+						}
+						if ($uid){
+							$data['hot'][$key]['data'][$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+							$data['hot'][$key]['data'][$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+							$data['hot'][$key]['data'][$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+						}else {
+							$data['hot'][$key]['data'][$k]['state'] = 0;
+							$data['hot'][$key]['data'][$k]['isfriend'] = 0;
+							$data['hot'][$key]['data'][$k]['isfriend2'] = 0;
 						}
 					}
 					if ($data['hot'][$key]['di'] >= 1000){
@@ -589,16 +645,25 @@ class IndexController extends Controller {
 				array_multisort($count,SORT_DESC,$data['hot']);
 				$data['hotcount'] = count($data['hot']);
 				$data['hot'] = array_page($data['hot'],1,3);			
+			}else {
+				$data['hotcount'] = 0;
 			}
 			
-			$data['news'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
+			$data['news'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
 			->join('left join t_user on t_user.id = t_comment.uid')
 			->where($where)->order('id desc')->limit(10)->select();
 			if ($data['news']){
 				foreach ($data['news'] as $key=>$val){
 					$data['news'][$key]['count'] = $table->where("pid = '{$val['id']}'")->count();
 					$data['news'][$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-					$data['news'][$key]['data'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+					if ($uid){
+						$data['news'][$key]['state'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $uid")->find() ? 1 : 0;
+						$data['news'][$key]['isfriend'] = $friend->where("fid = '{$val['uid']}' and uid = $uid")->find() ? 1 : 0;
+					}else {
+						$data['news'][$key]['state'] = 0;
+						$data['news'][$key]['isfriend'] = 0;
+					}
+					$data['news'][$key]['data'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 					->join('left join t_user on t_user.id = t_comment.uid')
 					->join('left join t_user u on u.id = t_comment.senduid')
 					->where("t_comment.pid = '{$val['id']}'")->order('t_comment.id desc')->limit(2)->select();
@@ -609,6 +674,15 @@ class IndexController extends Controller {
 							$data['news'][$key]['data'][$k]['distance'] = ceil($data['news'][$key]['data'][$k]['di']/1000).'km';
 						}else {
 							$data['news'][$key]['data'][$k]['distance'] = $data['news'][$key]['data'][$k]['di'].'m';
+						}
+						if ($uid){
+							$data['news'][$key]['data'][$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+							$data['news'][$key]['data'][$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+							$data['news'][$key]['data'][$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+						}else {
+							$data['news'][$key]['data'][$k]['state'] = 0;
+							$data['news'][$key]['data'][$k]['isfriend'] = 0;
+							$data['news'][$key]['data'][$k]['isfriend2'] = 0;
 						}
 					}
 					if ($data['news'][$key]['di'] >= 1000){
@@ -631,11 +705,13 @@ class IndexController extends Controller {
 	public function hotmore(){
 		if (I('post.')){
 			$table = M('comment');
+			$upper = M('upper');
+			$friend = M('friend');
 			$uid= I('post.uid');
 			$where['t_comment.typeid'] = I('post.typeid');
 			$where['t_comment.type'] = I('post.type');
 			$where['t_comment.pid'] = 0;
-			$data = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
+			$data = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
 			->join('left join t_user on t_user.id = t_comment.uid')
 			->where($where)->select();
 			if ($data){
@@ -646,8 +722,14 @@ class IndexController extends Controller {
 						continue;
 					}
 					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-						
-					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+					if ($uid){
+						$data[$key]['state'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $uid")->find() ? 1 : 0;
+						$data[$key]['isfriend'] = $friend->where("fid = '{$val['uid']}' and uid = $uid")->find() ? 1 : 0;
+					}else {
+						$data[$key]['state'] = 0;
+						$data[$key]['isfriend'] = 0;
+					}	
+					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 					->join('left join t_user on t_user.id = t_comment.uid')
 					->join('left join t_user u on u.id = t_comment.senduid')
 					->where("t_comment.pid = '{$val['id']}'")->order('t_comment.id desc')->limit(2)->select();
@@ -658,6 +740,15 @@ class IndexController extends Controller {
 							$data[$key]['data'][$k]['distance'] = ceil($data[$key]['data'][$k]['di']/1000).'km';
 						}else {
 							$data[$key]['data'][$k]['distance'] = $data[$key]['data'][$k]['di'].'m';
+						}
+						if ($uid){
+							$data[$key]['data'][$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+						}else {
+							$data[$key]['data'][$k]['state'] = 0;
+							$data[$key]['data'][$k]['isfriend'] = 0;
+							$data[$key]['data'][$k]['isfriend2'] = 0;
 						}
 					}
 					if ($data[$key]['di'] >= 1000){
@@ -680,20 +771,30 @@ class IndexController extends Controller {
 	public function newsmore(){
 		if (I('post.')){
 			$table = M('comment');
+			$upper = M('upper');
+			$friend = M('friend');
 			$uid= I('post.uid');
 			$where['t_comment.typeid'] = I('post.typeid');
 			$where['t_comment.type'] = I('post.type');
 			$where['t_comment.pid'] = 0;
 			$page = I('post.page') ? I('post.page') : 1;
 			$page = ($page-1)*10;
-			$data = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
+			$data = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
 			->join('left join t_user on t_user.id = t_comment.uid')
-			->where($where)->order('id desc')->limit($page,10)->select();
+			->where($where)->order('id desc')->limit($page,10)->select();		
+			$data['page'] = I('post.page') ? I('post.page') : 1;
 			if ($data){
 				foreach ($data as $key=>$val){
 					$data[$key]['count'] = $table->where("pid = '{$val['id']}'")->count();
 					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+					if ($uid){
+						$data[$key]['state'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $uid")->find() ? 1 : 0;
+						$data[$key]['isfriend'] = $friend->where("fid = '{$val['uid']}' and uid = $uid")->find() ? 1 : 0;
+					}else {
+						$data[$key]['state'] = 0;
+						$data[$key]['isfriend'] = 0;
+					}
+					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 					->join('left join t_user on t_user.id = t_comment.uid')
 					->join('left join t_user u on u.id = t_comment.senduid')
 					->where("t_comment.pid = '{$val['id']}'")->order('t_comment.id desc')->limit(2)->select();
@@ -704,6 +805,15 @@ class IndexController extends Controller {
 							$data[$key]['data'][$k]['distance'] = ceil($data[$key]['data'][$k]['di']/1000).'km';
 						}else {
 							$data[$key]['data'][$k]['distance'] = $data[$key]['data'][$k]['di'].'m';
+						}
+						if ($uid){
+							$data[$key]['data'][$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+						}else {
+							$data[$key]['data'][$k]['state'] = 0;
+							$data[$key]['data'][$k]['isfriend'] = 0;
+							$data[$key]['data'][$k]['isfriend2'] = 0;
 						}
 					}
 					if ($data[$key]['di'] >= 1000){
@@ -724,17 +834,28 @@ class IndexController extends Controller {
 	public function commentmore(){
 		if (I('post.')){
 			$table = M('comment');
+			$upper = M('upper');
+			$friend = M('friend');
 			$uid= I('post.uid');
 			$where['t_comment.pid'] = I('post.pid');
 			$where['t_comment.type'] = I('post.type');
 			$page = I('post.page') ? I('post.page') : 1;
 			$page = ($page-2)*8+2;
-			$data = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+			$data = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 			->join('left join t_user on t_user.id = t_comment.uid')
 			->join('left join t_user u on u.id = t_comment.senduid')
 			->where($where)->order('t_comment.id desc')->limit($page,8)->select();
+			$data['page'] = I('post.page') ? I('post.page') : 1;
 			//计算二级评论距离
 			foreach ($data as $k=>$v){
+				if ($uid){
+					$data[$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+					$data[$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+					$data[$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+				}else {
+					$data[$k]['state'] = 0;
+					$data[$k]['isfriend'] = 0;
+				}
 				$data[$k]['di'] = powc(I('post.latitude'),I('post.longitude'), $v['latitude'], $v['longitude']);
 				if ($data[$k]['di'] >= 1000){
 					$data[$k]['distance'] = ceil($data[$k]['di']/1000).'km';
@@ -756,8 +877,15 @@ class IndexController extends Controller {
 		if (I('post.')){
 			$table = M('comment');
 			$uid= I('post.uid');
+			if (!$uid){
+				json('400','登陆后才能执行此操作！');
+			}
+			$upper = M('upper');
 			$friend = M('friend');
 			$arr = $friend->where("uid = $uid")->getField('fid',true);
+			if (!$arr){
+				json('400','没有数据');
+			}
 			$map['t_comment.uid'] = array('in',$arr);
 			$map['c.uid'] = array('in',$arr);
 			$map['_logic'] = 'or';
@@ -767,15 +895,23 @@ class IndexController extends Controller {
 			$where['t_comment.pid'] = 0;			
 			$page = I('post.page') ? I('post.page') : 1;
 			$page = ($page-1)*10;
-			$data = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
+			$data = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude')
 			->join('left join t_user on t_user.id = t_comment.uid')
 			->join('left join t_comment as c on c.pid = t_comment.id')
 			->where($where)->order('id desc')->limit($page,10)->select();
+			$data['page'] = I('post.page') ? I('post.page') : 1;
 			if ($data){
 				foreach ($data as $key=>$val){
 					$data[$key]['count'] = $table->where("pid = '{$val['id']}'")->count();
 					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
+					if ($uid){
+						$data[$key]['state'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $uid")->find() ? 1 : 0;
+						$data[$key]['isfriend'] = $friend->where("fid = '{$val['uid']}' and uid = $uid")->find() ? 1 : 0;
+					}else {
+						$data[$key]['state'] = 0;
+						$data[$key]['isfriend'] = 0;
+					}
+					$data[$key]['data'] = $table->field('t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2')
 					->join('left join t_user on t_user.id = t_comment.uid')
 					->join('left join t_user u on u.id = t_comment.senduid')
 					->where("t_comment.pid = '{$val['id']}'")->order('t_comment.id desc')->limit(2)->select();
@@ -786,6 +922,15 @@ class IndexController extends Controller {
 							$data[$key]['data'][$k]['distance'] = ceil($data[$key]['data'][$k]['di']/1000).'km';
 						}else {
 							$data[$key]['data'][$k]['distance'] = $data[$key]['data'][$k]['di'].'m';
+						}
+						if ($uid){
+							$data[$key]['data'][$k]['state'] = $upper->where("type = 'comment' and pid = '{$v['id']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend'] = $friend->where("fid = '{$v['uid']}' and uid = $uid")->find() ? 1 : 0;
+							$data[$key]['data'][$k]['isfriend2'] = $friend->where("fid = '{$v['uid2']}' and uid = $uid")->find() ? 1 : 0;
+						}else {
+							$data[$key]['data'][$k]['state'] = 0;
+							$data[$key]['data'][$k]['isfriend'] = 0;
+							$data[$key]['data'][$k]['isfriend2'] = 0;
 						}
 					}
 					if ($data[$key]['di'] >= 1000){
@@ -801,6 +946,84 @@ class IndexController extends Controller {
 		}
 		json('404');
 	}
+	
+	//会员空间评论新闻
+	public function userzone(){
+		if (I('post.')){
+			$uid = I('post.uid');
+			$id =I('post.id');
+			$user = M('user');
+			$page = I('post.page') ?I('post.page') :1;
+			$page = ($page-1)*10;
+			$data = $user->field('id,simg,bgimg,username,sex,logintime,latitude,longitude')->find($uid);
+			$data['page'] =I('post.page') ?I('post.page') :1;
+			if ($data){
+				$fans = M('fans');
+				$comment = M('comment');
+				$data['isfans'] = $fans->where("uid = $id and fid = $uid")->find() ? 1 : 0;
+				$data['myfans'] = $fans->where("fid = $uid")->count();
+				$data['fansto'] = $fans->where("uid = $uid")->count();
+				$data['dynamic'] = 0;
+				$data['di'] = powc(I('post.latitude'),I('post.longitude'), $data['latitude'], $data['longitude']);
+				if ($data['di'] >= 1000){
+					$data['distance'] = ceil($data['di']/1000).'km';
+				}else {
+					$data['distance'] = $data['di'].'m';
+				}
+				$data['comment'] = $comment->field('t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type')
+				->join('left join t_news on t_news.id = t_comment.typeid')
+				->where("t_comment.uid = $uid and t_comment.type = 'news'")->order('t_comment.addtime desc')->limit($page,10)->select();
+				$img = M('img');
+				$upper = M('upper');
+				foreach ($data['comment'] as $key => $val){
+					$data['comment'][$key]['simg3'] = $img->where("type = 'news' and pid = '{$val['newsid']}'")->getField('simg') ? $img->where("type = 'news' and pid = '{$val['newsid']}'")->getField('simg') : ' ';
+					$data['comment'][$key]['isupper'] = $upper->where("type = 'comment' and pid = '{$val['id']}' and uid = $id")->find() ? 1 : 0;					
+				}
+				json('200','成功',$data);
+			}else {
+				json('400','没有此会员');
+			}
+		}
+		json('404');
+	}
+	
+	//会员空间评论新闻
+	public function userdata(){
+		if (I('post.')){
+			$uid = I('post.uid');
+			$id =I('post.id');
+			$user = M('user');
+			$data = $user->field('id,simg,bgimg,username,sex,logintime,latitude,longitude,sign,occup,hobby,addr,description as descript,address,addtime')->find($uid);
+			if ($data){
+				$fans = M('fans');			
+				$comment = M('comment');
+				$data['isfans'] = $fans->where("uid = $id and fid = $uid")->find() ? 1 : 0;
+				$data['myfans'] = $fans->where("fid = $uid")->count();
+				$data['fansto'] = $fans->where("uid = $uid")->count();
+				$data['dynamic'] = 0;
+				$data['di'] = powc(I('post.latitude'),I('post.longitude'), $data['latitude'], $data['longitude']);
+				if ($data['di'] >= 1000){
+					$data['distance'] = ceil($data['di']/1000).'km';
+				}else {
+					$data['distance'] = $data['di'].'m';
+				}
+				$friend = M('friend');
+				$data['isfriend'] = $friend->where("uid = $id and fid = $uid")->find() ? 1 : 0;
+				$data['newdynamic'] = $comment->field('id,type,description as descript')->where("uid = $uid")->order('addtime desc')->find();
+				json('200','成功',$data);
+			}else {
+				json('400','没有此会员');
+			}
+		}
+		json('404');
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 		

@@ -76,7 +76,7 @@
     <div class="content-tab-ul-wrap">
       <ul>
         <li><a href="javascript:;" onclick="tabs(this);" class="selected">基本信息</a></li>
-		<li><a href="javascript:;" onclick="tabs(this);">返利配置</a></li>
+		<li><a href="javascript:;" onclick="tabs(this);">基本配置</a></li>
       </ul>
     </div>
   </div>
@@ -104,6 +104,7 @@
     <dt>地址</dt>
     <dd><input type="text" name="addr" value="{$addr}" Class="input normal" /></dd>
   </dl>
+  <!--
   <dl>
     <dt>网站关键字(SEO)</dt>
     <dd><input type="text" name="keyword" value="{$keyword}" Class="input normal" /></dd>
@@ -119,12 +120,20 @@
       <span class="Validform_checktip">支持HTML</span>
     </dd>
   </dl>
+  -->
   </div>
 <div class="tab-content" style="display: none;">
   <dl>
-    <dt>配置</dt>
+    <dt>基本配置</dt>
     <dd>
       <dd><input type="text" name="zong" value="{$zong}" datatype="n1-2" Class="input small"  sucmsg=" " errormsg="范围0-99" value="0" /> <span class="Validform_checktip">*0-99之间的数字</span></dd>
+    </dd>
+  </dl>
+  <dl>
+    <dt>禁用词组</dt>
+    <dd>
+      <textarea id="webcopyright" name="ban" Class="input" />{$ban}</textarea>
+      <span class="Validform_checktip">词组之间用英文逗号（,）隔开</span>
     </dd>
   </dl>
 </div>

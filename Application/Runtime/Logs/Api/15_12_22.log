@@ -1,0 +1,200 @@
+[ 2015-12-22T10:36:27+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0123s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 1 and fid = 111192 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 111192 ) LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 111192 ) LIMIT 1   [ RunTime:0.0123s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_comment.descripion' in 'field list'
+
+[ 2015-12-22T10:37:30+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0146s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 1 and fid = 111192 ) LIMIT 1   [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 111192 ) LIMIT 1   [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 111192 ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 111192 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0292s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0142s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause'
+
+[ 2015-12-22T10:39:17+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0131s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 1 and fid = 111192 ) LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 111192 ) LIMIT 1   [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 111192 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 111192 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0129s ]
+
+[ 2015-12-22T10:39:52+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0112s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 1 and fid = 111192 ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 111192 ) LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 111192 ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 111192 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0095s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503780' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '64' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '51' and uid = 1 ) LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '50' and uid = 1 ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '49' and uid = 1 ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '48' and uid = 1 ) LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '47' and uid = 1 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '46' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '45' and uid = 1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '44' and uid = 1 ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '43' and uid = 1 ) LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2015-12-22T10:48:52+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0136s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 1 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0189s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '15' and uid = 111192 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '1' and uid = 111192 ) LIMIT 1   [ RunTime:0.0128s ]
+
+[ 2015-12-22T10:58:44+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0145s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 1 ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 1 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.2322s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '15' and uid = 111192 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '1' and uid = 111192 ) LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2015-12-22T11:05:48+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0129s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 1 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 1 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0142s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '15' and uid = 111192 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '1' and uid = 111192 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503768' ) LIMIT 1   [ RunTime:0.0143s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause'
+
+[ 2015-12-22T11:06:33+08:00 ] 127.0.0.1 /Api/index/userzone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 1 ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT t_comment.id,t_comment.pid,t_comment.upper,t_comment.description as descript,t_comment.addtime,t_comment.typeid as newsid,t_news.title,t_news.simg,t_news.img,t_news.type FROM `t_comment` left join t_news on t_news.id = t_comment.typeid  WHERE ( t_comment.uid = 1 and t_comment.type = 'news' ) ORDER BY t_comment.addtime desc LIMIT 0,10   [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0090s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '15' and uid = 111192 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503767' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '1' and uid = 111192 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503768' ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503768' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '2' and uid = 111192 ) LIMIT 1   [ RunTime:0.0085s ]
+
+[ 2015-12-22T14:01:05+08:00 ] 127.0.0.1 /Api/index/userdata
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0106s ]
+SQL: SELECT `id`,`simg`,`bgimg`,`username`,`sex`,`logintime`,`latitude`,`longitude`,`sign`,`occup`,`hobby`,`addr`,description as descript,`address`,`addtime` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_fans` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_fans` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( fid = 1 ) LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_fans` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_friend` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT `id`,`type`,description as descript FROM `t_comment` WHERE ( uid = 1 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0103s ]
+

@@ -5,10 +5,6 @@ class BaseController extends CommonController {
 	public function index(){
 		$base = D('Base');
 		if (I('post.')){
-			$count = I('post.zong') +  I('post.sheng') + I('post.shi') + I('post.xian') + I('post.jian') + I('post.zhi') + I('post.xiao');
-			if ($count != 100){
-				alertBack('返利点总和相加必须等于100');
-			}
 			if ($base->create()){
 				if ($base->save(I('post.'))){
 					alertBack('修改成功！');	

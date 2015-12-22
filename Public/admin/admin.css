@@ -350,7 +350,7 @@ textarea.input{ width:300px; height:65px; }
 	.border-table td .ibtn{ position:absolute;top:0; right:-7px; background:#cc; border:none; color:#666; cursor:pointer; font-family:"Microsoft Yahei"; font-size:12px; height:25px; line-height:25px; padding:0 12px; }
 	.border-table td .ibtn:hover{ color:#fff; background:#FF9C30; }
 	.border-table thead th{ color:#333; font-weight:normal; white-space:nowrap; text-align:center; background:#f9f9f9; }
-	.border-table tbody th{padding-right:5px; text-align:right;color:#707070;background-color:#eee}
+	.border-table tbody th{padding-right:5px; text-align:right;color:#707070;background-color:#f9f9f9}
 	.border-table tr.td_c td{ text-align:center; }
 	.border-table td .cbllist input{ vertical-align:middle; }
 	.border-table td .cbllist label{ margin-right:5px; vertical-align:middle; }
