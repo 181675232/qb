@@ -1,0 +1,10 @@
+[ 2016-01-20T09:31:31+08:00 ] 127.0.0.1 /Api/index/groupusername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0096s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE t_groupuser.group_id = '385' AND t_groupuser.user_id = '111192' LIMIT 1   [ RunTime:0.0099s ]
+

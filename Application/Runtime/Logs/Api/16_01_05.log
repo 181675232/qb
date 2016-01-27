@@ -1,0 +1,238 @@
+[ 2016-01-05T16:21:20+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0125s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'php8082.u_user' doesn't exist
+
+[ 2016-01-05T16:21:56+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0138s ]
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-05T16:22:48+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0165s ]
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-05T16:26:12+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0119s ]
+
+[ 2016-01-05T16:26:55+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0309s ]
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-05T16:27:29+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0126s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_user' in 'field list'
+
+[ 2016-01-05T16:28:17+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0127s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_user' in 'field list'
+
+[ 2016-01-05T16:29:12+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT t_groupuser.user_id,t_groupuser.level,t_groupuser.username,t_user.simg,t_user.sex,t_user.logintime,t_user.sign FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_groupuser.level = 5 )  [ RunTime:0.0192s ]
+
+[ 2016-01-05T16:29:35+08:00 ] 127.0.0.1 /Api/index/groupuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0189s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT t_groupuser.user_id,t_groupuser.level,t_groupuser.username,t_user.simg,t_user.sex,t_user.logintime,t_user.sign FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_groupuser.level = 5 )  [ RunTime:0.0108s ]
+NOTIC: [8] Undefined index: latitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1906 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1906 行.
+SQL: SELECT t_groupuser.user_id,t_groupuser.level,t_groupuser.username,t_user.simg,t_user.sex,t_user.logintime,t_user.sign FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_groupuser.level = 4 ) ORDER BY t_groupuser.poll desc  [ RunTime:0.0187s ]
+SQL: SELECT t_groupuser.user_id,t_groupuser.level,t_groupuser.username,t_user.simg,t_user.sex,t_user.logintime,t_user.sign FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_groupuser.level = 3 ) ORDER BY t_groupuser.poll desc  [ RunTime:0.0172s ]
+NOTIC: [8] Undefined index: latitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+NOTIC: [8] Undefined index: latitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+NOTIC: [8] Undefined index: latitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1928 行.
+
+[ 2016-01-05T16:38:09+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0127s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_groupuser.username.username' in 'field list'
+
+[ 2016-01-05T16:38:42+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0113s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'addtme' in 'order clause'
+
+[ 2016-01-05T16:39:00+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0214s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_img` WHERE ( type = 'dynamic' and pid ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 4   [ RunTime:0.0086s ]
+
+[ 2016-01-05T16:41:35+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0137s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 4   [ RunTime:0.0102s ]
+
+[ 2016-01-05T16:42:05+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0127s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 4   [ RunTime:0.0097s ]
+
+[ 2016-01-05T16:42:47+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT `id`,`title`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 4   [ RunTime:0.0113s ]
+

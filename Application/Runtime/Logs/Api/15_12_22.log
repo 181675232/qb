@@ -198,3 +198,228 @@ SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0112s ]
 SQL: SELECT * FROM `t_friend` WHERE ( uid = 111192 and fid = 1 ) LIMIT 1   [ RunTime:0.0107s ]
 SQL: SELECT `id`,`type`,description as descript FROM `t_comment` WHERE ( uid = 1 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0103s ]
 
+[ 2015-12-22T15:06:19+08:00 ] 127.0.0.1 /Api/index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0134s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '' AND t_comment.type = '' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '' ) LIMIT 1   [ RunTime:0.0172s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 788 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 789 行.
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 791 行.
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0208s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 792 行.
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0194s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 797 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 802 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 822 行.
+
+[ 2015-12-22T15:06:46+08:00 ] 127.0.0.1 /Api/index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0102s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '' AND t_comment.type = '' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '' ) LIMIT 1   [ RunTime:0.0091s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 788 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 789 行.
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0099s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 791 行.
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0102s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 792 行.
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0112s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 797 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 802 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 822 行.
+
+[ 2015-12-22T15:07:24+08:00 ] 127.0.0.1 /Api/index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0130s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '' AND t_comment.type = '' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '' ) LIMIT 1   [ RunTime:0.0102s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 788 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 789 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 794 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 795 行.
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0110s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 797 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 802 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 822 行.
+
+[ 2015-12-22T15:07:28+08:00 ] 127.0.0.1 /Api/index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0147s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '' AND t_comment.type = '' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '' ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 788 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 789 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 794 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 795 行.
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0265s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 797 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 802 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 822 行.
+
+[ 2015-12-22T15:08:34+08:00 ] 127.0.0.1 /Api/index/newsmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0083s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude FROM `t_comment` left join t_user on t_user.id = t_comment.uid  WHERE t_comment.typeid = '9503767' AND t_comment.type = 'news' AND t_comment.pid = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '37' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '37' and uid = 1 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '37' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '46' and uid = 1 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '45' and uid = 1 ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '36' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '36' and uid = 1 ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '36' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '51' and uid = 1 ) LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '50' and uid = 1 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '35' ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '35' and uid = 1 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '35' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '34' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '34' and uid = 1 ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '34' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '33' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '33' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '33' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '32' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '32' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '32' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '31' ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '31' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '31' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '30' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '30' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '30' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '18' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '18' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111188' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '18' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '65' and uid = 1 ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111193' and uid = 1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '49' and uid = 1 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111192' and uid = 1 ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '17' ) LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '17' and uid = 1 ) LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '111189' and uid = 1 ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '17' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( pid = '' ) LIMIT 1   [ RunTime:0.0093s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 788 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 789 行.
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'comment' and pid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0085s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 791 行.
+SQL: SELECT * FROM `t_friend` WHERE ( fid = '' and uid = 1 ) LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 792 行.
+SQL: SELECT t_comment.id,t_comment.description as descript,t_comment.upper,t_comment.addtime,t_comment.uid,t_user.simg,t_user.username,t_user.longitude,t_user.latitude,u.id as uid2,u.username as username2,u.simg as simg2 FROM `t_comment` left join t_user on t_user.id = t_comment.uid left join t_user u on u.id = t_comment.senduid  WHERE ( t_comment.pid = '' ) ORDER BY t_comment.id desc LIMIT 2   [ RunTime:0.0094s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 797 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 802 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 822 行.
+
+[ 2015-12-22T15:12:19+08:00 ] 127.0.0.1 /Api/index/commentmore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0082s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,8' at line 1
+
+[ 2015-12-22T15:52:01+08:00 ] 127.0.0.1 /Api/index/newsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_trace` WHERE `uid` = 1 AND `newsid` = 9503768 LIMIT 1   [ RunTime:0.0167s ]
+SQL: UPDATE `t_trace` SET `addtime`='1450770721' WHERE `uid` = 1 AND `newsid` = 9503768 [ RunTime:0.0127s ]
+SQL: SELECT `id`,`tag`,`lower`,`upper`,`url`,`groupid`,`type` FROM `t_news` WHERE `id` = 9503768 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'news' and typeid='9503768' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0125s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause'
+
+[ 2015-12-22T15:52:41+08:00 ] 127.0.0.1 /Api/index/newsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_cell` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_trace` WHERE `uid` = 1 AND `newsid` = 9503768 LIMIT 1   [ RunTime:0.0083s ]
+SQL: UPDATE `t_trace` SET `addtime`='1450770761' WHERE `uid` = 1 AND `newsid` = 9503768 [ RunTime:0.0082s ]
+SQL: SELECT `id`,`tag`,`lower`,`upper`,`url`,`groupid`,`type` FROM `t_news` WHERE `id` = 9503768 LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'news' and typeid='9503768' ) LIMIT 1   [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0092s ]
+SQL: SELECT `title`,`simg` FROM `t_img` WHERE ( type = 'news' and pid = '9503768' )  [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads` ORDER BY ord asc,id desc LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT t_news.id,t_news.title,t_news.origin,t_news.addtime,t_news.type FROM `t_trace` left join t_news on t_news.id = t_trace.newsid  WHERE ( t_trace.uid = '1' and t_news.id !='9503768' and (t_news.cityid = 9503760 or t_news.cityid = 0) ) ORDER BY t_trace.addtime desc LIMIT 2   [ RunTime:0.0093s ]
+SQL: SELECT `id`,`title`,`origin`,`addtime`,`type` FROM `t_news` WHERE ( groupid = '1' and id !='9503768' and (cityid = 9503760 or cityid = 0) ) ORDER BY addtime desc LIMIT 2   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_upper` WHERE ( uid = '1' and pid = '9503768' and type='news' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_cell` WHERE ( uid = '1' and pid = '9503768' and type='news' ) LIMIT 1   [ RunTime:0.0091s ]
+

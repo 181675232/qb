@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 <title>后台管理系统</title>
 <link href="/Public/admin/base.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/layout.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/js/scripts/jquery/jquery.nicescroll.js"></script>
 <link rel="Bookmark" href="favicon.ico" >
 <link rel="Shortcut Icon" href="favicon.ico" />
 <script type="text/javascript">

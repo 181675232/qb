@@ -1,0 +1,191 @@
+[ 2016-01-13T11:08:09+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0129s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0072s ]
+
+[ 2016-01-13T11:23:23+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0104s ]
+SQL: UPDATE `t_activity` SET `address`='望京',`addtime`='1452655403' WHERE `id` = 9503767 [ RunTime:0.0195s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0206s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0117s ]
+SQL: INSERT INTO `t_message` (`addtime`,`title`,`content`,`type`,`typeid`,`state`,`uid`) VALUES ('1452655403','您报名的活动  修改了信息','您报名的活动  修改了信息','activity','9503767','0','111192') [ RunTime:0.0113s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0089s ]
+NOTIC: [8] Undefined variable: jpushid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2627 行.
+
+[ 2016-01-13T11:26:33+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0094s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0077s ]
+SQL: UPDATE `t_activity` SET `address`='望京1',`addtime`='1452655593' WHERE `id` = 9503767 [ RunTime:0.0166s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0098s ]
+
+[ 2016-01-13T11:27:23+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0179s ]
+SQL: UPDATE `t_activity` SET `address`='望京',`addtime`='1452655643' WHERE `id` = 9503767 [ RunTime:0.0172s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0130s ]
+SQL: INSERT INTO `t_message` (`addtime`,`title`,`content`,`type`,`typeid`,`state`,`uid`) VALUES ('1452655643','您报名的活动 德玛西亚 修改了信息','您报名的活动 德玛西亚 修改了信息','activity','9503767','0','111192') [ RunTime:0.0129s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: jpushid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2627 行.
+
+[ 2016-01-13T11:32:03+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0110s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0107s ]
+SQL: UPDATE `t_activity` SET `address`='望京1',`addtime`='1452655923' WHERE `id` = 9503767 [ RunTime:0.0171s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0124s ]
+SQL: INSERT INTO `t_message` (`addtime`,`title`,`content`,`type`,`typeid`,`state`,`uid`) VALUES ('1452655923','您报名的活动 德玛西亚 修改了信息','您报名的活动 德玛西亚 修改了信息','activity','9503767','0','111192') [ RunTime:0.0094s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0111s ]
+NOTIC: [8] Undefined variable: jpushid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2625 行.
+
+[ 2016-01-13T11:33:43+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0099s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0137s ]
+SQL: UPDATE `t_activity` SET `address`='望京',`addtime`='1452656023' WHERE `id` = 9503767 [ RunTime:0.0138s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0135s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0112s ]
+
+[ 2016-01-13T11:37:35+08:00 ] 127.0.0.1 /Api/index/editgroupact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0119s ]
+SQL: SELECT `uid` FROM `t_activityuser` WHERE ( pid = 9503767 )  [ RunTime:0.0109s ]
+SQL: UPDATE `t_activity` SET `address`='望京Soho',`addtime`='1452656254' WHERE `id` = 9503767 [ RunTime:0.0168s ]
+SQL: SELECT * FROM `t_activity` WHERE `id` = 9503767 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0118s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0093s ]
+SQL: INSERT INTO `t_message` (`addtime`,`title`,`content`,`type`,`typeid`,`state`,`uid`) VALUES ('1452656254','您报名的活动 德玛西亚 修改了信息','您报名的活动 德玛西亚 修改了信息','activity','9503767','0','111192') [ RunTime:0.0094s ]
+SQL: SELECT `jpushid` FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0111s ]
+
+[ 2016-01-13T11:45:26+08:00 ] 127.0.0.1 /Api/index/editgroups
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0123s ]
+SQL: UPDATE `t_groups` SET `title`='JJJJJJq' WHERE `id` = 385 [ RunTime:0.0239s ]
+
+[ 2016-01-13T20:03:35+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT `id`,`title`,`simg`,`condition`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0124s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_user.sex = 2 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0122s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_user.sex = 1 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0124s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'group' and pid = '385' ) ORDER BY ord asc,addtime desc LIMIT 6   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0152s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0114s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0122s ]
+
+[ 2016-01-13T20:05:07+08:00 ] 127.0.0.1 /Api/index/groupinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT `id`,`title`,`simg`,`condition`,description as descript,`address`,`longitude`,`latitude`,`addtime` FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111192 and group_id = 385 ) LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = 385 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0182s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_user.sex = 2 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0136s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = 385 and t_user.sex = 1 ) ORDER BY t_groupuser.poll desc,t_groupuser.addtime asc LIMIT 6   [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'group' and pid = '385' ) ORDER BY ord asc,addtime desc LIMIT 6   [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`uid`,`content` FROM `t_dynamic` WHERE ( type = 'group' and typeid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT `id`,`simg`,`title` FROM `t_activity` WHERE ( groupid = 385 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.0114s ]
+
+[ 2016-01-13T20:29:01+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `id`,`username`,`latitude`,`longitude`,`age`,`hobby`,`occup`,`sign`,`simg`,`sex`,`logintime` FROM `t_user` WHERE `id` <> '111192'  [ RunTime:0.0431s ]
+
+[ 2016-01-13T20:29:28+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0354s ]
+

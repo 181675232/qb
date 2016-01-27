@@ -1,0 +1,113 @@
+[ 2016-01-02T14:08:08+08:00 ] 127.0.0.1 /Api/index/refusegroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_message` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111199 LIMIT 1   [ RunTime:0.0128s ]
+SQL: UPDATE `t_message` SET `state`='3' WHERE `id` = 55 [ RunTime:0.0095s ]
+SQL: INSERT INTO `t_message` (`state`,`type`,`addtime`,`typeid`,`uid`,`title`,`content`) VALUES ('0','user','1451714887','385','111199','喵喵拒绝了加入jjjjjjjq群组','喵喵拒绝了加入jjjjjjjq群组') [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2016-01-02T17:28:58+08:00 ] 127.0.0.1 /Api/index/groupquit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0093s ]
+SQL: DELETE FROM `t_groupuser` WHERE `user_id` = 111199 AND `group_id` = 385 [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111199 LIMIT 1   [ RunTime:0.0088s ]
+SQL: INSERT INTO `t_groupuser` (`addtime`) VALUES ('1451726938') [ RunTime:0.0083s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0092s ]
+
+[ 2016-01-02T17:31:29+08:00 ] 127.0.0.1 /Api/index/groupquit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0121s ]
+SQL: DELETE FROM `t_groupuser` WHERE `user_id` = 111199 AND `group_id` = 385 [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111199 LIMIT 1   [ RunTime:0.0124s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`title`,`content`,`addtime`,`type`,`typeid`) VALUES ('0','111199','喵喵退出了jjjjjjjq群组','喵喵退出了jjjjjjjq群组','1451727089','group','385') [ RunTime:0.0120s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0124s ]
+
+[ 2016-01-02T18:04:04+08:00 ] 127.0.0.1 /Api/index/groupdismiss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 388 LIMIT 1   [ RunTime:0.0119s ]
+
+[ 2016-01-02T18:04:18+08:00 ] 127.0.0.1 /Api/index/groupdismiss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 388 LIMIT 1   [ RunTime:0.0097s ]
+
+[ 2016-01-02T18:05:12+08:00 ] 127.0.0.1 /Api/index/groupdismiss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 388 LIMIT 1   [ RunTime:0.0117s ]
+
+[ 2016-01-02T18:05:16+08:00 ] 127.0.0.1 /Api/index/groupdismiss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 388 LIMIT 1   [ RunTime:0.0079s ]
+SQL: DELETE FROM `t_groups` WHERE `id` = 388 [ RunTime:0.0076s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'php8082.t_u_groupuser' doesn't exist
+
+[ 2016-01-02T18:05:52+08:00 ] 127.0.0.1 /Api/index/groupdismiss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 388 LIMIT 1   [ RunTime:0.0098s ]
+SQL: DELETE FROM `t_groups` WHERE `id` = 388 [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0089s ]
+SQL: SELECT t_user.jpushid,t_user.id FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '388' )  [ RunTime:0.0088s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`title`,`content`,`type`,`addtime`,`typeid`) VALUES ('0','111192','您所在的云里雾里群组解散了','您所在的云里雾里群组解散了','user','1451729152','388') [ RunTime:0.0092s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`title`,`content`,`type`,`addtime`,`typeid`) VALUES ('0','111197','您所在的云里雾里群组解散了','您所在的云里雾里群组解散了','user','1451729152','388') [ RunTime:0.0189s ]
+SQL: DELETE FROM `t_groupuser` WHERE `group_id` = 388 [ RunTime:0.0093s ]
+

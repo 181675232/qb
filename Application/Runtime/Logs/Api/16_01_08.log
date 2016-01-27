@@ -1,0 +1,154 @@
+[ 2016-01-08T14:00:10+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0102s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0121s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and group_id = 246 ) LIMIT 1' at line 1
+
+[ 2016-01-08T14:01:16+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0130s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = '' and group_id = '246' ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '246' ) LIMIT 1   [ RunTime:0.0110s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-01-08T14:02:02+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0139s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0138s ]
+
+[ 2016-01-08T14:03:36+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0259s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0334s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0354s ]
+
+[ 2016-01-08T14:04:59+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0093s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0184s ]
+
+[ 2016-01-08T14:05:30+08:00 ] 127.0.0.1 /Api/index/dtinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0119s ]
+SQL: SELECT t_dynamic.id,t_dynamic.address,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.type,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.id = 246 ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111200 and group_id = 246 ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '246' ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '246' and uid = 111200 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `simg` FROM `t_img` WHERE ( type = 'dynamic' and pid = '246' )  [ RunTime:0.0093s ]
+
+[ 2016-01-08T14:57:05+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0105s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0117s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0095s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0097s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0090s ]
+
+[ 2016-01-08T14:57:37+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0117s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0117s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0092s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2335 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '' ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-01-08T15:02:08+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '1' ) LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '2' ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '3' ) LIMIT 1   [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '4' ) LIMIT 1   [ RunTime:0.0089s ]
+
+[ 2016-01-08T16:52:20+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0217s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '1' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '2' ) LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '3' ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = 9503760 and class = '4' ) LIMIT 1   [ RunTime:0.0157s ]
+

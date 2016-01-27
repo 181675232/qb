@@ -82,6 +82,7 @@ class NewsController extends CommonController {
 						$data_img['simg'] = $data['user_simg'][$i];
 						$data_img['title'] = $data['user_desc'][$i];
 						$data_img['addtime'] = time();
+						
 						$img->add($data_img);
 					}
 				}

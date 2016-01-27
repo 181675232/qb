@@ -1,0 +1,109 @@
+[ 2016-01-06T10:12:48+08:00 ] 127.0.0.1 /Api/index/addpoll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+
+[ 2016-01-06T10:13:28+08:00 ] 127.0.0.1 /Api/index/addpoll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111197 and group_id = '385' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: UPDATE `t_groupuser` SET `poll`=poll+1 WHERE `user_id` = 111192 AND `group_id` = 385 [ RunTime:0.0072s ]
+SQL: UPDATE `t_groupuser` SET `vote`=vote-1 WHERE ( user_id = 111197 and group_id = '385' ) [ RunTime:0.0085s ]
+
+[ 2016-01-06T10:14:39+08:00 ] 127.0.0.1 /Api/index/addpoll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111197 and group_id = '385' ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: UPDATE `t_groupuser` SET `poll`=poll+1 WHERE `user_id` = 111192 AND `group_id` = 385 [ RunTime:0.0108s ]
+SQL: UPDATE `t_groupuser` SET `vote`=vote-1 WHERE ( user_id = 111197 and group_id = '385' ) [ RunTime:0.0131s ]
+
+[ 2016-01-06T10:14:40+08:00 ] 127.0.0.1 /Api/index/addpoll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111197 and group_id = '385' ) LIMIT 1   [ RunTime:0.0209s ]
+SQL: UPDATE `t_groupuser` SET `poll`=poll+1 WHERE `user_id` = 111192 AND `group_id` = 385 [ RunTime:0.0098s ]
+SQL: UPDATE `t_groupuser` SET `vote`=vote-1 WHERE ( user_id = 111197 and group_id = '385' ) [ RunTime:0.0116s ]
+
+[ 2016-01-06T10:14:40+08:00 ] 127.0.0.1 /Api/index/addpoll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( user_id = 111197 and group_id = '385' ) LIMIT 1   [ RunTime:0.0127s ]
+
+[ 2016-01-06T12:44:16+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+ERR: 非法操作:groupdtlist
+
+[ 2016-01-06T12:44:38+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0086s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 385 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0083s ]
+
+[ 2016-01-06T12:46:07+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0109s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 385 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0151s ]
+
+[ 2016-01-06T14:08:32+08:00 ] 127.0.0.1 /Api/index/groupmessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0084s ]
+SQL: SELECT `group_id` FROM `t_groupuser` WHERE ( user_id = 111196 and level >3 )  [ RunTime:0.0089s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\qb\ThinkPHP\Library\Think\Db\Driver.class.php 第 567 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( (type = "group") ) ORDER BY addtime desc LIMIT 0,15' at line 1
+
+[ 2016-01-06T14:13:16+08:00 ] 127.0.0.1 /Api/index/groupmessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0141s ]
+SQL: SELECT `group_id` FROM `t_groupuser` WHERE ( user_id = 111196 and level >3 )  [ RunTime:0.0151s ]
+

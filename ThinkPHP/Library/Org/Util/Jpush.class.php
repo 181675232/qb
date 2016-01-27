@@ -37,7 +37,7 @@ class Jpush{
 			}else {
 				$result1 = $client->push()
 				->setPlatform(M\Platform('android', 'ios'))
-				->setAudience(M\Audience(M\Tag($jpushid)))
+				->setAudience(M\Audience(M\registration_id($jpushid)))
 				->setNotification(M\notification($content,
 						M\android($content,$title, 1,$array),
 						M\ios($content, "happy", "+1", true, $array, "Ios8 Category")

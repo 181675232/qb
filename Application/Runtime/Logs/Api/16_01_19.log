@@ -1,0 +1,256 @@
+[ 2016-01-19T13:50:48+08:00 ] 127.0.0.1 /Api/index/groupactivitylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.groupid = 394 ) ORDER BY t_activity.addtime desc LIMIT 0,15   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 394 and user_id = '111192' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  394 and uid = '111192' and state =1 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 394  WHERE ( t_activityuser.pid = '9503774' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503774' and uid = '111192' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 394 and user_id = '111192' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  394 and uid = '111192' and state =1 ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 394  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111192' ) LIMIT 1   [ RunTime:0.0088s ]
+
+[ 2016-01-19T13:52:14+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503767 ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0332s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503767 and user_id = '111192' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503767 and uid = '111192' and state =1 ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503767' )  [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503767' ) LIMIT 1   [ RunTime:0.0179s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 9503767  WHERE ( t_activityuser.pid = '9503767' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0143s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503767' and uid = '111192' ) LIMIT 1   [ RunTime:0.0096s ]
+
+[ 2016-01-19T13:54:57+08:00 ] 127.0.0.1 /Api/index/9503769
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 非法操作:9503769
+
+[ 2016-01-19T13:55:04+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111192' ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111192' and state =1 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 9503769  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111192' ) LIMIT 1   [ RunTime:0.0126s ]
+
+[ 2016-01-19T13:56:10+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.1004s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111192' ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111192' and state =1 ) LIMIT 1   [ RunTime:0.0717s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0542s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 9503769  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111192' ) LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2016-01-19T13:56:49+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.8511s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.1073s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111195 LIMIT 1   [ RunTime:0.0357s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0348s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111195' ) LIMIT 1   [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111195' and state =1 ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 9503769  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0141s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111195' ) LIMIT 1   [ RunTime:0.0090s ]
+
+[ 2016-01-19T13:58:13+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111195 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0264s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111195' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111195' and state =1 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = 9503769  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0093s ]
+
+[ 2016-01-19T14:00:42+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111195 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111195' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111195' and state =1 ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = '394'  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0094s ]
+
+[ 2016-01-19T14:00:59+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111200 LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111200' ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111200' and state =1 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = '394'  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111200' ) LIMIT 1   [ RunTime:0.0149s ]
+
+[ 2016-01-19T14:14:11+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0244s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111200 LIMIT 1   [ RunTime:0.0147s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111200' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111200' and state =1 ) LIMIT 1   [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: field D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2803 行.
+SQL: SELECT * FROM `t_groups` left join t_user on t_user.id = t_groups.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_groups.id = '394' and t_groupuser.group_id = '394' ) LIMIT 1   [ RunTime:0.0378s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0425s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = '394'  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0072s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111200' ) LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2016-01-19T14:16:17+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111200 LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = 9503769 and user_id = '111200' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_message` WHERE ( type = 'group' and typeid =  9503769 and uid = '111200' and state =1 ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT t_user.id,t_user.simg,t_user.sex,t_user.phone,t_groupuser.username FROM `t_groups` left join t_user on t_user.id = t_groups.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_groups.id = '394' and t_groupuser.group_id = '394' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = '394'  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111200' ) LIMIT 1   [ RunTime:0.0084s ]
+
+[ 2016-01-19T14:17:53+08:00 ] 127.0.0.1 /Api/index/groupactivityinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_img` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111200 LIMIT 1   [ RunTime:0.0226s ]
+SQL: SELECT t_activity.id,t_activity.title,t_activity.description as descript,t_activity.shopname,t_activity.simg,t_activity.address,t_activity.longitude,t_activity.latitude,t_activity.starttime,t_activity.type,t_activity.price,t_activity.addtime,t_activity.groupid,t_groups.title as name,t_groups.type as type1 FROM `t_activity` left join t_groups on t_activity.groupid = t_groups.id  WHERE ( t_activity.id = 9503769 ) LIMIT 1   [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `t_activityuser` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_groupuser` WHERE ( group_id = '394' and user_id = '111200' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT t_user.id,t_user.simg,t_user.sex,t_user.phone,t_groupuser.username FROM `t_groups` left join t_user on t_user.id = t_groups.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_groups.id = '394' and t_groupuser.group_id = '394' ) LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT `id`,`simg` FROM `t_img` WHERE ( type = 'activity' and pid = '9503769' )  [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_activityuser` WHERE ( t_activityuser.pid = '9503769' ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT t_user.id,t_groupuser.username,t_user.simg,t_user.sex FROM `t_activityuser` left join t_user on t_user.id = t_activityuser.uid left join t_groupuser on t_user.id = t_groupuser.user_id and t_groupuser.group_id = '394'  WHERE ( t_activityuser.pid = '9503769' ) ORDER BY t_activityuser.id asc LIMIT 6   [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_activityuser` WHERE ( pid = '9503769' and uid = '111200' ) LIMIT 1   [ RunTime:0.0101s ]
+

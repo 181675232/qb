@@ -1,0 +1,182 @@
+[ 2016-01-04T11:29:43+08:00 ] 127.0.0.1 /Api/index/editgrouplevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `user_id` = 111197 AND `group_id` = 385 LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `group_id` = 385 AND `user_id` = 111192 LIMIT 1   [ RunTime:0.0082s ]
+SQL: UPDATE `t_groupuser` SET `level`='4' WHERE `user_id` = 111197 AND `group_id` = 385 [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0087s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878183','group','385','雨神提升为jjjjjjjq群组管理员','雨神提升为jjjjjjjq群组管理员') [ RunTime:0.0085s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0114s ]
+
+[ 2016-01-04T11:29:59+08:00 ] 127.0.0.1 /Api/index/editgrouplevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `user_id` = 111197 AND `group_id` = 385 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `group_id` = 385 AND `user_id` = 111192 LIMIT 1   [ RunTime:0.0092s ]
+SQL: UPDATE `t_groupuser` SET `level`='3' WHERE `user_id` = 111197 AND `group_id` = 385 [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878199','group','385','雨神被降为jjjjjjjq群组普通成员','雨神被降为jjjjjjjq群组管普通成员') [ RunTime:0.0107s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0104s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878199','user','385','您被降为jjjjjjjq群组普通成功','您被降为jjjjjjjq群组普通成功') [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: jpushid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1632 行.
+ERR: Invalid registration_id[0], registration_id[0] must be a string
+
+[ 2016-01-04T11:34:12+08:00 ] 127.0.0.1 /Api/index/editgrouplevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111197 LIMIT 1   [ RunTime:0.0281s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `user_id` = 111197 AND `group_id` = 385 LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `group_id` = 385 AND `user_id` = 111192 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `t_groupuser` SET `level`='4' WHERE `user_id` = 111197 AND `group_id` = 385 [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0102s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878452','group','385','雨神提升为jjjjjjjq群组管理员','雨神提升为jjjjjjjq群组管理员') [ RunTime:0.0087s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0093s ]
+
+[ 2016-01-04T11:34:23+08:00 ] 127.0.0.1 /Api/index/editgrouplevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111197 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `user_id` = 111197 AND `group_id` = 385 LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_groupuser` WHERE `group_id` = 385 AND `user_id` = 111192 LIMIT 1   [ RunTime:0.0261s ]
+SQL: UPDATE `t_groupuser` SET `level`='3' WHERE `user_id` = 111197 AND `group_id` = 385 [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0106s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878463','group','385','雨神被降为jjjjjjjq群组普通成员','雨神被降为jjjjjjjq群组管普通成员') [ RunTime:0.0103s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0116s ]
+SQL: INSERT INTO `t_message` (`state`,`uid`,`addtime`,`type`,`typeid`,`title`,`content`) VALUES ('0','111197','1451878463','user','385','您被降为jjjjjjjq群组普通成员','您被降为jjjjjjjq群组普通成员') [ RunTime:0.0112s ]
+
+[ 2016-01-04T13:32:49+08:00 ] 127.0.0.1 /Api/index/mygroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+ERR: 非法操作:mygroup
+
+[ 2016-01-04T13:33:08+08:00 ] 127.0.0.1 /Api/index/mygroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0118s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u_group.id' in 'on clause'
+
+[ 2016-01-04T13:33:30+08:00 ] 127.0.0.1 /Api/index/mygroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0100s ]
+SQL: SELECT t_groups.id,t_groups.simg,t_groups.title,t_groups.description as descript,t_groupuser.level FROM `t_groupuser` left join t_groups on t_groups.id = t_groupuser.group_id  WHERE ( t_groupuser.user_id = 111192 )  [ RunTime:0.0092s ]
+
+[ 2016-01-04T16:47:51+08:00 ] 127.0.0.1 /Api/index/joingroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111204 LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `t_message` WHERE ( uid = '111204' and typeid = '385' and (type = 'group' or type = 'user') ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: INSERT INTO `t_message` (`uid`,`typeid`,`content`,`addtime`,`type`,`title`,`status`) VALUES ('111204','385','111','1451897271','group','别啊啦 申请加入 jjjjjjjq 群组','2') [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0133s ]
+SQL: SELECT t_user.jpushid FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' and t_groupuser.level > 3 )  [ RunTime:0.0109s ]
+
+[ 2016-01-04T16:47:57+08:00 ] 127.0.0.1 /Api/index/joingroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111204 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 385 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_message` WHERE ( uid = '111204' and typeid = '385' and (type = 'group' or type = 'user') ) LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [8] Undefined variable: jpushid D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1185 行.
+
+[ 2016-01-04T17:15:57+08:00 ] 127.0.0.1 /Api/index/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-01-04T17:16:01+08:00 ] 127.0.0.1 /Api/index/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_message` WHERE `uid` = 111204 AND ( (type = "user" or type = "system") ) ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0105s ]
+
+[ 2016-01-04T17:16:15+08:00 ] 127.0.0.1 /Api/index/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `t_message` WHERE `uid` = 111192 AND ( (type = "user" or type = "system") ) ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0100s ]
+SQL: SELECT `simg` FROM `t_groups` WHERE ( id = '388' ) LIMIT 1   [ RunTime:0.0099s ]
+
+[ 2016-01-04T17:17:56+08:00 ] 127.0.0.1 /Api/index/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_message` WHERE `uid` = 111192 AND ( (type = "user" or type = "system") ) ORDER BY addtime desc LIMIT 0,15   [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0122s ]
+SQL: SELECT `simg` FROM `t_groups` WHERE ( id = '388' ) LIMIT 1   [ RunTime:0.0094s ]
+

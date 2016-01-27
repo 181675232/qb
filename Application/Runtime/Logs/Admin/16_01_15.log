@@ -1,0 +1,709 @@
+[ 2016-01-15T10:31:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8] Undefined index: userid D:\wamp\www\qb\Application\Admin\Controller\CommonController.class.php 第 19 行.
+
+[ 2016-01-15T10:31:38+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011253s ]
+
+[ 2016-01-15T10:31:38+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-01-15T10:31:38+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-01-15T10:31:38+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-01-15T10:31:46+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0100s ]
+SQL: SELECT `password` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0058s ]
+
+[ 2016-01-15T10:31:46+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0104s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0090s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1452825106' WHERE `id` = 3 [ RunTime:0.0101s ]
+
+[ 2016-01-15T10:31:46+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0089s ]
+SQL: SELECT t_admin.name,t_role.name as title FROM `t_admin` left join t_role_user on t_role_user.user_id = t_admin.id left join t_role on t_role.id = t_role_user.role_id  WHERE ( t_admin.id = 3 ) LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-01-15T10:31:46+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-01-15T10:31:46+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2016-01-15T10:31:47+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 342 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0147s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 455 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 380 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 381 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 445 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 450 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 438 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 439 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-01-15T10:31:56+08:00 ] 127.0.0.1 /Admin/Groups
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.3022s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\GroupsController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` LIMIT 1   [ RunTime:0.8471s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\GroupsController.class.php 第 24 行.
+SQL: SELECT t_groups.*,t_user.username,t_user.phone FROM `t_groups` left join t_user on t_user.id = t_groups.uid  ORDER BY state asc,id desc LIMIT 0,15   [ RunTime:1.4998s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 42 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-01-15T10:32:14+08:00 ] 127.0.0.1 /Admin/Groups/state/id/408
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:4.2478s ]
+SQL: UPDATE `t_groups` SET `state`='2' WHERE `id` = 408 [ RunTime:1.4003s ]
+SQL: SELECT * FROM `t_groups` WHERE `id` = 408 LIMIT 1   [ RunTime:0.1517s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.2984s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111213 LIMIT 1   [ RunTime:0.5014s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.1462s ]
+SQL: INSERT INTO `t_groupuser` (`group_id`,`username`,`user_id`,`level`,`addtime`) VALUES ('408','222','111213','5','1452825132') [ RunTime:0.5004s ]
+
+[ 2016-01-15T10:32:15+08:00 ] 127.0.0.1 /Admin/Groups
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0093s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\GroupsController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` LIMIT 1   [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\GroupsController.class.php 第 24 行.
+SQL: SELECT t_groups.*,t_user.username,t_user.phone FROM `t_groups` left join t_user on t_user.id = t_groups.uid  ORDER BY state asc,id desc LIMIT 0,15   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 42 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 72 行.
+NOTIC: [8] Undefined index: ord D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 75 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Undefined index: istop D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 79 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Undefined index: isred D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 80 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\wamp\www\qb\Application\Runtime\Cache\Admin\4327f01a89f25b0c940a04bc5fd19293.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+

@@ -97,6 +97,10 @@
 	<dt>城市名称</dt>
 		<dd><input type="text" name="title" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl>
+	<dl>
+	<dt>索引前缀</dt>
+		<dd><input type="text" name="prefix" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*A-Z英文字母</span></dd>
+	</dl>
 	 <dl>
     <dt>是否热门</dt>
     <dd>

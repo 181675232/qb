@@ -22,6 +22,26 @@ function json($code,$message='',$data=array()){
 }
 
 /**
+ * 按josn方式输出通信数据
+ * @param integer $code 状态码
+ * @param string $message 提示信息
+ * @param array $data 数据
+ */
+function jsons($code,$message='',$data=array()){
+	if (!is_numeric($code)){
+		return '';
+	}
+
+	$result = array(
+			'code' => $code,
+			'message' => $message,
+			'data' => $data
+	);
+
+	echo json_encode($result);
+}
+
+/**
  * 获取当前页面完整URL地址
  */
 function geturl() {
@@ -46,6 +66,19 @@ function  powc($lat_a,$lng_a,$lat_b,$lng_b){
 	$tt = acos($t1 + $t2 + $t3);
 	$distance = round((6366000 * $tt));
 	return $distance;
+}
+/** 获取当前时间戳，精确到毫秒 */
+function microtime_float()
+{
+	list($usec, $sec) = explode(" ", microtime());
+	return ((float)$usec + (float)$sec);
+}
+/** 格式化时间戳，精确到毫秒，x代表毫秒 */
+function microtime_format($tag, $time)
+{
+	list($usec, $sec) = explode(".", $time);
+	$date = date($tag,$usec);
+	return str_replace('x', $sec, $date);
 }
 //数组分页
 function array_page($array,$page,$count='15'){
@@ -81,6 +114,33 @@ function sendPostSMS($url,$data=array()){
 	
 	return $file_contents;
 }
+
+function makeRequest($url, $param, $httpMethod = 'GET') {
+	$oCurl = curl_init();
+	if (stripos($url, "https://") !== FALSE) {
+		curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($oCurl, CURLOPT_SSL_VERIFYHOST, FALSE);
+	}
+	if ($httpMethod == 'GET') {
+		curl_setopt($oCurl, CURLOPT_URL, $url . "?" . http_build_query($param));
+		curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+	} else {
+		curl_setopt($oCurl, CURLOPT_URL, $url);
+		curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($oCurl, CURLOPT_POST, 1);
+		curl_setopt($oCurl, CURLOPT_POSTFIELDS, http_build_query($param));
+	}
+	$sContent = curl_exec($oCurl);
+	$aStatus = curl_getinfo($oCurl);
+	curl_close($oCurl);
+	if (intval($aStatus["http_code"]) == 200) {
+		return $sContent;
+	} else {
+		return FALSE;
+	}
+}
+
+
 // 检测输入的验证码是否正确，$code为用户输入的验证码字符串
 function check_code($code, $id = ''){ 
 	$verify = new \Think\Verify(); 

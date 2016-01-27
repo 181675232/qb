@@ -1,0 +1,1477 @@
+[ 2015-12-29T14:34:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8] Undefined index: userid D:\wamp\www\qb\Application\Admin\Controller\CommonController.class.php 第 19 行.
+
+[ 2015-12-29T14:34:52+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2015-12-29T14:34:52+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-12-29T14:34:53+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2015-12-29T14:34:53+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-12-29T14:34:59+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0265s ]
+SQL: SELECT `password` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0128s ]
+
+[ 2015-12-29T14:34:59+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0144s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0115s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1451370899' WHERE `id` = 3 [ RunTime:0.0132s ]
+
+[ 2015-12-29T14:34:59+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0272s ]
+SQL: SELECT t_admin.name,t_role.name as title FROM `t_admin` left join t_role_user on t_role_user.user_id = t_admin.id left join t_role on t_role.id = t_role_user.role_id  WHERE ( t_admin.id = 3 ) LIMIT 1   [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-12-29T14:34:59+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-12-29T14:35:00+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-12-29T14:35:00+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0148s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0183s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 342 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0173s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0158s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 380 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 381 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0162s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 438 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 439 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0137s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0195s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0166s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0116s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0172s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-12-29T14:35:02+08:00 ] 127.0.0.1 /Admin/Selfcity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_selfcity` LIMIT 1   [ RunTime:0.0078s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\SelfcityController.class.php 第 26 行.
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,id desc LIMIT 0,15   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2015-12-29T14:35:07+08:00 ] 127.0.0.1 /Admin/Selfcity/state/id/9503760/isred/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0224s ]
+SQL: UPDATE `t_selfcity` SET `isred`='1' WHERE `id` = 9503760 [ RunTime:0.0184s ]
+
+[ 2015-12-29T14:35:07+08:00 ] 127.0.0.1 /Admin/Selfcity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_selfcity` LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\SelfcityController.class.php 第 26 行.
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,id desc LIMIT 0,15   [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2015-12-29T14:35:13+08:00 ] 127.0.0.1 /Admin/Selfcity/state/id/9503760/isred/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0166s ]
+SQL: UPDATE `t_selfcity` SET `isred`='2' WHERE `id` = 9503760 [ RunTime:0.0285s ]
+
+[ 2015-12-29T14:35:13+08:00 ] 127.0.0.1 /Admin/Selfcity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_selfcity` LIMIT 1   [ RunTime:0.0338s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\SelfcityController.class.php 第 26 行.
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,id desc LIMIT 0,15   [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\qb\Application\Runtime\Cache\Admin\7224e4b25872e9ce0050481912a41c50.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2015-12-29T14:35:19+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0116s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0098s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.1614s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2015-12-29T14:35:21+08:00 ] 127.0.0.1 /News/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0161s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 15,15   [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2015-12-29T14:35:22+08:00 ] 127.0.0.1 /Admin/News/state/id/9503782/isred/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0168s ]
+SQL: UPDATE `t_news` SET `isred`='2' WHERE `id` = 9503782 [ RunTime:0.0200s ]
+
+[ 2015-12-29T14:35:22+08:00 ] 127.0.0.1 /Admin/News.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0434s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.1698s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2015-12-29T14:35:25+08:00 ] 127.0.0.1 /News/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0143s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0259s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 15,15   [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2015-12-29T14:35:26+08:00 ] 127.0.0.1 /Admin/News/state/id/9503783/istop/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0284s ]
+SQL: UPDATE `t_news` SET `istop`='2' WHERE `id` = 9503783 [ RunTime:0.0357s ]
+
+[ 2015-12-29T14:35:26+08:00 ] 127.0.0.1 /Admin/News.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0116s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.2562s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-12-29T14:35:29+08:00 ] 127.0.0.1 /News/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0323s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0271s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 15,15   [ RunTime:0.0331s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2015-12-29T14:35:34+08:00 ] 127.0.0.1 /Admin/News/state/id/9503783/istop/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0139s ]
+SQL: UPDATE `t_news` SET `istop`='1' WHERE `id` = 9503783 [ RunTime:0.0187s ]
+
+[ 2015-12-29T14:35:35+08:00 ] 127.0.0.1 /Admin/News.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0129s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0269s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.2595s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2015-12-29T14:35:52+08:00 ] 127.0.0.1 /Admin/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0164s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0149s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.9532s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-12-29T14:35:52+08:00 ] 127.0.0.1 /News/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0138s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 15,15   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-12-29T14:35:54+08:00 ] 127.0.0.1 /Admin/News/state/id/9503783/istop/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0150s ]
+SQL: UPDATE `t_news` SET `istop`='2' WHERE `id` = 9503783 [ RunTime:0.0228s ]
+
+[ 2015-12-29T14:35:55+08:00 ] 127.0.0.1 /Admin/News.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `t_news` [ RunTime:0.0242s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 31 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_news` LIMIT 1   [ RunTime:0.0108s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\qb\Application\Admin\Controller\NewsController.class.php 第 35 行.
+SQL: SELECT * FROM `t_news` ORDER BY isred desc,ord asc,addtime desc LIMIT 0,15   [ RunTime:0.2826s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 40 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant istop - assumed 'istop' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 71 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\qb\Application\Runtime\Cache\Admin\e84d1c149b88214d37c4f6238ea8b474.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+

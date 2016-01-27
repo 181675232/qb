@@ -1,0 +1,272 @@
+[ 2016-01-07T10:36:51+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0120s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0096s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-01-07T10:37:17+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0130s ]
+
+[ 2016-01-07T10:37:26+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0129s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0116s ]
+
+[ 2016-01-07T10:37:56+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0101s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0128s ]
+
+[ 2016-01-07T10:38:07+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0138s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0115s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-01-07T10:39:22+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0161s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0117s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-01-07T10:39:59+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0128s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0075s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-01-07T10:40:15+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0102s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '239' ) LIMIT 1   [ RunTime:0.0088s ]
+
+[ 2016-01-07T10:41:04+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0106s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '239' and uid = '' ) LIMIT 1   [ RunTime:0.0110s ]
+
+[ 2016-01-07T10:41:22+08:00 ] 127.0.0.1 /Api/index/groupdtlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `t_dynamic` [ RunTime:0.0093s ]
+SQL: SELECT t_dynamic.id,t_dynamic.content,t_dynamic.upper,t_dynamic.addtime,t_dynamic.state,t_dynamic.uid,t_user.simg,t_user.sex,t_groupuser.username FROM `t_dynamic` left join t_user on t_user.id = t_dynamic.uid left join t_groupuser on t_groupuser.user_id = t_user.id  WHERE ( t_dynamic.type = 'group' and t_dynamic.typeid = 390 ) ORDER BY t_dynamic.state desc,t_dynamic.addtime desc LIMIT 0,15   [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_upper` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '239' and uid = '' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '239' and uid = '' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '239' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '239' and uid = '' ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '238' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '238' and uid = '' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '238' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '238' and uid = '' ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '238' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '238' and uid = '' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '237' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '237' and uid = '' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '237' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '237' and uid = '' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( type = 'dynamic' and typeid = '237' ) LIMIT 1   [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_upper` WHERE ( type = 'dynamic' and pid = '237' and uid = '' ) LIMIT 1   [ RunTime:0.0085s ]
+
+[ 2016-01-07T14:16:36+08:00 ] 127.0.0.1 /Api/index/mygroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT t_groups.uid,t_groups.address,t_groups.longitude,t_groups.latitude,t_groups.id,t_groups.simg,t_groups.addtime,t_groups.title,t_groups.condition,t_groups.type,t_groups.description as descript,t_groupuser.level FROM `t_groupuser` left join t_groups on t_groups.id = t_groupuser.group_id  WHERE ( t_groupuser.user_id = 111192 )  [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = '385' ) LIMIT 1   [ RunTime:0.0229s ]
+SQL: SELECT t_user.id,t_user.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '385' ) ORDER BY t_groupuser.poll desc,t_groupuser.level LIMIT 6   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = '390' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT t_user.id,t_user.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '390' ) ORDER BY t_groupuser.poll desc,t_groupuser.level LIMIT 6   [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groupuser` WHERE ( group_id = '395' ) LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT t_user.id,t_user.username,t_user.simg,t_user.sex FROM `t_groupuser` left join t_user on t_user.id = t_groupuser.user_id  WHERE ( t_groupuser.group_id = '395' ) ORDER BY t_groupuser.poll desc,t_groupuser.level LIMIT 6   [ RunTime:0.0129s ]
+
+[ 2016-01-07T15:24:48+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0098s ]
+SQL: UPDATE `t_groupuser` SET `user_id`='1' WHERE ( group_id = 385 ) [ RunTime:0.0131s ]
+
+[ 2016-01-07T15:26:31+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0135s ]
+SQL: UPDATE `t_groupuser` SET `user_id`='1' WHERE ( group_id = 385 ) [ RunTime:0.0097s ]
+
+[ 2016-01-07T15:27:00+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0146s ]
+SQL: SELECT `user_id` FROM `t_groupuser` WHERE ( group_id = 385 )  [ RunTime:0.0149s ]
+
+[ 2016-01-07T15:40:08+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0097s ]
+SQL: SELECT `user_id` FROM `t_groupuser` WHERE ( group_id = 385 )  [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0094s ]
+SQL: SELECT `uid` FROM `t_message` WHERE ( typeid = '385' and (type = 'group' or type = 'user') and state = 1 )  [ RunTime:0.0087s ]
+
+[ 2016-01-07T15:42:24+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0091s ]
+SQL: SELECT `user_id` FROM `t_groupuser` WHERE ( group_id = 385 )  [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0156s ]
+SQL: SELECT `uid` FROM `t_message` WHERE ( typeid = '385' and (type = 'group' or type = 'user') and state = 1 )  [ RunTime:0.0075s ]
+SQL: SELECT t_user.id,t_user.username,t_user.simg,t_user.sex,t_user.logintime,t_user.phone,t_user.latitude,t_user.longitude FROM `t_friend` left join t_user on t_user.id = t_friend.fid  WHERE ( t_friend.uid = 111192 )  [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2303 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( uid = '111192' and userid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2304 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( userid = '111192' and uid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0086s ]
+
+[ 2016-01-07T15:43:17+08:00 ] 127.0.0.1 /Api/index/yqfriendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `t_friend` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_changephone` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_groupuser` [ RunTime:0.0128s ]
+SQL: SELECT `user_id` FROM `t_groupuser` WHERE ( group_id = 385 )  [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0194s ]
+SQL: SELECT `uid` FROM `t_message` WHERE ( typeid = '385' and (type = 'group' or type = 'user') and state = 1 )  [ RunTime:0.0175s ]
+SQL: SELECT t_user.id,t_user.username,t_user.simg,t_user.sex,t_user.logintime,t_user.phone,t_user.latitude,t_user.longitude FROM `t_friend` left join t_user on t_user.id = t_friend.fid  WHERE ( t_friend.uid = 111192 )  [ RunTime:0.0265s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2299 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( uid = '111192' and userid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2300 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( userid = '111192' and uid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2299 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( uid = '111192' and userid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0094s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2300 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( userid = '111192' and uid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0221s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2299 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( uid = '111192' and userid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0086s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2300 行.
+SQL: SELECT * FROM `t_changephone` WHERE ( userid = '111192' and uid = '' and state = '2' ) LIMIT 1   [ RunTime:0.0139s ]
+

@@ -1,0 +1,353 @@
+[ 2016-01-14T08:48:01+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0118s ]
+
+[ 2016-01-14T08:48:25+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0095s ]
+
+[ 2016-01-14T08:48:48+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1401 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1410 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given D:\wamp\www\qb\Application\Common\Common\function.php 第 69 行.
+
+[ 2016-01-14T08:49:19+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0263s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1401 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1410 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given D:\wamp\www\qb\Application\Common\Common\function.php 第 69 行.
+
+[ 2016-01-14T08:49:24+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1401 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1410 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given D:\wamp\www\qb\Application\Common\Common\function.php 第 69 行.
+
+[ 2016-01-14T08:50:43+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1402 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1411 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, string given D:\wamp\www\qb\Application\Common\Common\function.php 第 69 行.
+
+[ 2016-01-14T08:54:10+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT `id`,`username`,`latitude`,`longitude`,`age`,`hobby`,`occup`,`sign`,`simg`,`sex`,`logintime` FROM `t_user` WHERE `sex` = 2 AND `logintime` > 1452473649 AND `id` <> '111192'  [ RunTime:0.0279s ]
+
+[ 2016-01-14T08:54:26+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT `id`,`username`,`latitude`,`longitude`,`age`,`hobby`,`occup`,`sign`,`simg`,`sex`,`logintime` FROM `t_user` WHERE `sex` = 1 AND `logintime` > 1452473666 AND `id` <> '111192'  [ RunTime:0.0104s ]
+
+[ 2016-01-14T08:54:31+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT `id`,`username`,`latitude`,`longitude`,`age`,`hobby`,`occup`,`sign`,`simg`,`sex`,`logintime` FROM `t_user` WHERE `sex` = 1 AND `logintime` > 1452731971 AND `id` <> '111192'  [ RunTime:0.0127s ]
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 1410 行.
+
+[ 2016-01-14T09:00:19+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-01-14T09:00:24+08:00 ] 127.0.0.1 /Api/index/nearbyuser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = 111192 LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT `id`,`username`,`latitude`,`longitude`,`age`,`hobby`,`occup`,`sign`,`simg`,`sex`,`logintime` FROM `t_user` WHERE `id` <> '111192'  [ RunTime:0.0451s ]
+
+[ 2016-01-14T09:37:38+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,prefix asc  [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0104s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0131s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0097s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0085s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0101s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0082s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: class D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\qb\Application\Api\Controller\IndexController.class.php 第 2411 行.
+
+[ 2016-01-14T09:40:15+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,prefix asc  [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '1' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '2' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '3' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '4' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '1' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '2' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '3' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '4' ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '1' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '2' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '3' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '4' ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '1' ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '2' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '3' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '4' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '1' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '2' ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '3' ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '4' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '1' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '2' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '3' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '4' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '1' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '2' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '3' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '4' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '1' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '2' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '3' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '4' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '1' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '2' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '3' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '4' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_class` ORDER BY ord asc  [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '1' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '2' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '3' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '4' ) LIMIT 1   [ RunTime:0.0089s ]
+
+[ 2016-01-14T09:41:56+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,prefix asc  [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '1' ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '2' ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '3' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '4' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '1' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '2' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '3' ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '4' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '1' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '2' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '3' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '4' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '1' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '2' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '3' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '4' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '1' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '2' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '3' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '4' ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '1' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '2' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '3' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '4' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '1' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '2' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '3' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '4' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '1' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '2' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '3' ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '4' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '1' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '2' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '3' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '4' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '1' ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '2' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '3' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '4' ) LIMIT 1   [ RunTime:0.0091s ]
+
+[ 2016-01-14T13:01:48+08:00 ] 127.0.0.1 /Api/index/groupclass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `t_selfcity` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_selfcity` ORDER BY isred desc,prefix asc  [ RunTime:0.0368s ]
+SQL: SHOW COLUMNS FROM `t_class` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_groups` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '1' ) LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '2' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '3' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503769' and class = '4' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '1' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '2' ) LIMIT 1   [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '3' ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503760' and class = '4' ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '1' ) LIMIT 1   [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '2' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '3' ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503767' and class = '4' ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '1' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '2' ) LIMIT 1   [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '3' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503765' and class = '4' ) LIMIT 1   [ RunTime:0.0106s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '1' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '2' ) LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '3' ) LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503763' and class = '4' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '1' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '2' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '3' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503761' and class = '4' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '1' ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '2' ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '3' ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503766' and class = '4' ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '1' ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '2' ) LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '3' ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503762' and class = '4' ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '1' ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '2' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '3' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503768' and class = '4' ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_class` ORDER BY ord asc  [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '1' ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '2' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '3' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_groups` WHERE ( cityid = '9503764' and class = '4' ) LIMIT 1   [ RunTime:0.0109s ]
+
